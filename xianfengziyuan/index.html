@@ -1,0 +1,977 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>先锋资源在线观看-高清片源索引与观影指南</title>
+<meta name="description" content="先锋资源在线观看：整理 1080P 与 4K 片源索引、字幕版本差异、播放线路稳定性记录与设备适配建议，附片单推荐、版本对照和常见播放问题解答，方便按时间与画质挑选合适片源。">
+<meta name="keywords" content="先锋资源在线观看">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1b2a'/%3E%3Cpath d='M18 20h12l6 10-6 10H18z' fill='%23ff7a3d'/%3E%3Cpath d='M34 20h12v20H34z' fill='%23f2f5f8' opacity='.85'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#101a25;
+  --ink-2:#2b3a4a;
+  --muted:#5c6b7a;
+  --line:#dbe3ea;
+  --line-2:#eef2f6;
+  --bg:#f6f8fa;
+  --card:#ffffff;
+  --brand:#0e1b2a;
+  --brand-2:#16324a;
+  --accent:#ff7a3d;
+  --accent-2:#f2562a;
+  --teal:#0f7a6c;
+  --gold:#b8860b;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 1px 2px rgba(16,26,37,.06),0 6px 18px rgba(16,26,37,.06);
+  --shadow-sm:0 1px 2px rgba(16,26,37,.08);
+  --space:20px;
+  --space-s:12px;
+  --space-l:40px;
+  --font:"Helvetica Neue",-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --ann-h:40px;
+  --head-h:64px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);
+  font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{color:var(--accent-2)}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;letter-spacing:.01em}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:1.2em}
+li{margin:4px 0}
+h2{font-size:24px}
+h3{font-size:18px}
+section[id],div[id]{scroll-margin-top:calc(var(--ann-h) + var(--head-h) + 8px)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* 公告条 */
+.announce{
+  position:sticky;top:0;z-index:60;background:var(--brand);color:#e8eef4;
+  font-size:13px;line-height:1.5;
+}
+.announce .wrap{display:flex;align-items:center;gap:10px;min-height:var(--ann-h);padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.announce b{color:#fff;font-weight:700;letter-spacing:.02em}
+.announce .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
+.announce .tag{background:rgba(255,122,61,.16);color:#ffb894;padding:1px 8px;border-radius:20px;font-size:12px;white-space:nowrap}
+.announce a{color:#ffc7a8}
+
+/* 页头 */
+.header{
+  position:sticky;top:var(--ann-h);z-index:50;background:rgba(255,255,255,.96);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+}
+.header .wrap{display:flex;align-items:center;gap:18px;min-height:var(--head-h)}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:34px;height:34px;flex:none}
+.brand .bt{font-size:18px;font-weight:800;color:var(--brand);letter-spacing:.02em;line-height:1.2}
+.brand .bs{font-size:11px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase}
+.nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:8px}
+.nav a{
+  padding:6px 10px;border-radius:var(--radius-sm);font-size:14px;color:var(--ink-2);
+  white-space:nowrap
+}
+.nav a:hover{background:var(--line-2);color:var(--brand)}
+.head-tools{margin-left:auto;display:flex;align-items:center;gap:8px}
+.search{display:flex;align-items:center;background:var(--line-2);border:1px solid var(--line);border-radius:20px;padding:2px 4px 2px 12px}
+.search input{border:0;background:transparent;outline:none;font:inherit;font-size:13px;width:150px;color:var(--ink);padding:5px 0}
+.search button{
+  border:0;background:var(--brand);color:#fff;font:inherit;font-size:12px;padding:5px 12px;border-radius:16px;cursor:pointer
+}
+.search button:hover{background:var(--brand-2)}
+.menu-btn{
+  display:none;border:1px solid var(--line);background:#fff;border-radius:var(--radius-sm);
+  font:inherit;font-size:14px;padding:6px 12px;cursor:pointer;color:var(--ink)
+}
+.menu-btn:focus-visible,.search button:focus-visible,.search input:focus-visible,.nav a:focus-visible,a:focus-visible,button:focus-visible{
+  outline:2px solid var(--accent);outline-offset:2px
+}
+.search-result{font-size:12px;color:var(--muted);padding:4px 8px;display:none}
+.search-result.show{display:block}
+
+/* 首屏 */
+.hero{background:linear-gradient(160deg,#0e1b2a 0%,#14314a 55%,#0c2536 100%);color:#eaf1f7;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;padding-top:52px;padding-bottom:56px;align-items:center}
+.hero .kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#8fb3cc;margin-bottom:14px}
+.hero .kicker::before{content:"";width:24px;height:2px;background:var(--accent)}
+.hero h1{font-size:40px;color:#fff;margin-bottom:16px;letter-spacing:.02em}
+.hero p.lead{font-size:16px;color:#c6d6e3;max-width:44em}
+.hero .stats{display:flex;gap:26px;margin:22px 0 26px;flex-wrap:wrap}
+.hero .stats div{font-size:12px;color:#96b2c8;letter-spacing:.04em}
+.hero .stats b{display:block;font-size:24px;color:#fff;letter-spacing:.01em;line-height:1.2}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:11px 22px;border-radius:24px;font-size:14px;font-weight:600;
+  border:1px solid transparent;transition:transform .15s ease,background .15s ease
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--accent);color:#1a1005}
+.btn-primary:hover{background:#ff8f5c;color:#1a1005}
+.btn-ghost{border-color:rgba(255,255,255,.35);color:#e8f1f8}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08);color:#fff}
+.hero-art{position:relative;min-height:300px}
+.hero-art svg{width:100%;height:auto;filter:drop-shadow(0 20px 40px rgba(0,0,0,.35))}
+
+/* 主内容 */
+.main{padding:44px 0 20px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:36px}
+.content{min-width:0}
+.sidebar{min-width:0}
+.side-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;margin-bottom:20px;box-shadow:var(--shadow-sm)}
+.side-card h3{font-size:15px;margin-bottom:10px;color:var(--brand);letter-spacing:.03em}
+.side-nav{list-style:none;padding:0;margin:0;font-size:14px}
+.side-nav a{display:block;padding:6px 10px;border-radius:6px;color:var(--ink-2);border-left:2px solid transparent}
+.side-nav a:hover{background:var(--line-2)}
+.side-nav a.active{background:#fff4ee;border-left-color:var(--accent);color:var(--accent-2);font-weight:600}
+.side-meta{font-size:13px;color:var(--muted)}
+.side-meta b{color:var(--ink)}
+
+/* 板块 */
+.block{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;margin-bottom:24px;box-shadow:var(--shadow-sm)}
+.block-h{display:flex;align-items:baseline;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.block-h h2{font-size:22px}
+.block-h .sub{font-size:13px;color:var(--muted)}
+.block-h .bar{width:28px;height:3px;background:var(--accent);border-radius:2px;align-self:center}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.tag{display:inline-block;font-size:12px;padding:1px 9px;border-radius:20px;background:var(--line-2);color:var(--ink-2);margin:2px 4px 2px 0;border:1px solid var(--line)}
+.tag.acc{background:#fff1ea;color:var(--accent-2);border-color:#ffd9c7}
+.tag.teal{background:#e7f5f2;color:var(--teal);border-color:#c9e9e2}
+.tag.gold{background:#fdf6e3;color:var(--gold);border-color:#f0e3bd}
+
+/* 网格卡片 */
+.grid{display:grid;gap:16px}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:column}
+.card .thumb{width:100%;height:130px;object-fit:cover}
+.card .bd{padding:14px}
+.card h3{font-size:16px;margin-bottom:6px}
+.card h3 a{color:var(--ink)}
+.card h3 a:hover{color:var(--accent-2)}
+.card p{font-size:13.5px;color:var(--muted);margin:0 0 8px}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap}
+
+/* 紧凑列表 */
+.list-b{list-style:none;padding:0;margin:0}
+.list-b li{display:flex;gap:12px;padding:11px 0;border-bottom:1px dashed var(--line)}
+.list-b li:last-child{border-bottom:0}
+.list-b .num{flex:none;width:22px;height:22px;border-radius:6px;background:var(--line-2);color:var(--muted);font-size:12px;font-weight:700;display:grid;place-items:center;margin-top:3px}
+.list-b .num.hot{background:#fff1ea;color:var(--accent-2)}
+.list-b .txt{min-width:0}
+.list-b .txt b{font-size:14.5px;color:var(--ink);display:block}
+.list-b .txt span{font-size:12.5px;color:var(--muted)}
+.list-b .date{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap;flex:none}
+
+/* 分类入口 */
+.cats{display:flex;flex-wrap:wrap;gap:10px}
+.cat{
+  display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border:1px solid var(--line);
+  border-radius:22px;font-size:14px;background:#fff;color:var(--ink-2)
+}
+.cat:hover{border-color:var(--accent);background:#fff7f3;color:var(--accent-2)}
+.cat i{font-style:normal;font-size:12px;color:var(--muted)}
+
+/* 深度解析 */
+.deep{background:#fbfcfd;border:1px solid var(--line);border-radius:var(--radius);padding:26px;margin-bottom:24px}
+.deep h2{font-size:24px;margin-bottom:8px}
+.deep h3{margin:22px 0 8px;font-size:17px;color:var(--brand);padding-left:12px;border-left:3px solid var(--accent)}
+.deep p{font-size:15px}
+.deep .quote{background:#fff;border-left:3px solid var(--accent);padding:12px 16px;margin:14px 0;border-radius:0 6px 6px 0;font-size:14.5px;color:var(--ink-2)}
+.verify{width:100%;border-collapse:collapse;font-size:13.5px;margin:14px 0 6px}
+.verify th,.verify td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.verify th{background:var(--line-2);font-weight:600;color:var(--ink)}
+.verify td:first-child{white-space:nowrap;color:var(--muted)}
+
+/* 步骤 */
+.steps{counter-reset:st;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{position:relative;padding:12px 14px 12px 50px;background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);font-size:14px}
+.steps li::before{
+  counter-increment:st;content:counter(st);position:absolute;left:12px;top:12px;
+  width:24px;height:24px;border-radius:50%;background:var(--brand);color:#fff;
+  font-size:12px;font-weight:700;display:grid;place-items:center
+}
+.steps b{display:block;color:var(--ink);margin-bottom:2px}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden}
+.compare > div{padding:16px}
+.compare .left{background:#fff;border-right:1px solid var(--line)}
+.compare .right{background:#fbf7f4}
+.compare h4{font-size:14px;color:var(--brand);margin-bottom:8px;letter-spacing:.02em}
+.compare ul{padding-left:1.1em;margin:0;font-size:13.5px;color:var(--ink-2)}
+.compare ul li{margin:5px 0}
+
+/* FAQ */
+details{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:10px}
+summary{cursor:pointer;padding:13px 16px;font-size:15px;font-weight:600;color:var(--ink);list-style:none;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:16px;top:11px;font-size:18px;color:var(--muted)}
+details[open] summary::after{content:"–"}
+details[open] summary{border-bottom:1px solid var(--line-2);color:var(--brand)}
+details .ans{padding:13px 16px;font-size:14px;color:var(--ink-2)}
+
+/* 评论 */
+.comments{display:grid;gap:12px}
+.cmt{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px}
+.cmt .ch{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}
+.cmt .av{width:28px;height:28px;border-radius:50%;background:var(--brand-2);color:#fff;font-size:12px;display:grid;place-items:center;font-weight:700}
+.cmt .nm{font-size:14px;font-weight:600}
+.cmt .tm{font-size:12px;color:var(--muted);margin-left:auto}
+.cmt p{margin:0;font-size:14px;color:var(--ink-2)}
+.cmt .ref{font-size:12.5px;color:var(--muted);margin-top:6px;display:block}
+
+/* 资讯 */
+.news{display:grid;gap:14px}
+.news-item{display:flex;gap:14px;padding-bottom:14px;border-bottom:1px dashed var(--line)}
+.news-item:last-child{border-bottom:0;padding-bottom:0}
+.news-item .nd{flex:none;width:52px;text-align:center;background:var(--line-2);border-radius:6px;padding:6px 0;font-size:11px;color:var(--muted)}
+.news-item .nd b{display:block;font-size:17px;color:var(--brand);line-height:1.2}
+.news-item h3{font-size:15.5px;margin-bottom:3px}
+.news-item p{font-size:13px;color:var(--muted);margin:0}
+
+/* 标签索引 */
+.tags-index{display:flex;flex-wrap:wrap;gap:8px}
+
+/* 引语卡 */
+.quote-card{background:linear-gradient(150deg,#0e1b2a,#1b3a52);color:#e9f2f8;border-radius:var(--radius);padding:22px 24px}
+.quote-card p{font-size:15.5px;color:#dbe9f3;margin-bottom:10px}
+.quote-card .who{font-size:12.5px;color:#9dbdd4;letter-spacing:.03em}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;position:relative}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.timeline li{padding:0 0 16px 28px;position:relative;font-size:14px}
+.timeline li::before{content:"";position:absolute;left:1px;top:7px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--accent)}
+.timeline b{display:block;color:var(--ink)}
+.timeline span{color:var(--muted);font-size:12.5px}
+
+/* 榜单 */
+.rank{display:grid;gap:0;border-top:1px solid var(--line)}
+.rank-row{display:flex;align-items:center;gap:14px;padding:11px 0;border-bottom:1px solid var(--line-2)}
+.rank-row .rk{width:28px;height:28px;border-radius:8px;background:var(--line-2);color:var(--ink-2);font-weight:700;font-size:13px;display:grid;place-items:center;flex:none}
+.rank-row .rk.top{background:var(--accent);color:#231305}
+.rank-row .info{min-width:0;flex:1}
+.rank-row .info b{font-size:14.5px}
+.rank-row .info span{display:block;font-size:12.5px;color:var(--muted)}
+.rank-row .val{font-size:12.5px;color:var(--muted);white-space:nowrap}
+
+/* 页脚 */
+.footer{background:#0c1420;color:#a9bccd;margin-top:44px;padding:44px 0 24px;font-size:13.5px}
+.footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
+.footer h4{color:#fff;font-size:14px;margin-bottom:12px;letter-spacing:.05em}
+.footer a{color:#a9bccd;display:block;padding:3px 0}
+.footer a:hover{color:var(--accent)}
+.footer .fbrand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.footer .fbrand svg{width:30px;height:30px}
+.footer .fbrand b{color:#fff;font-size:16px;letter-spacing:.02em}
+.footer .fd{font-size:13px;color:#8ea4b8;max-width:26em}
+.footer .bottom{border-top:1px solid #1c2a3a;margin-top:30px;padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#7e93a7}
+.footer .note{background:#111d2b;border:1px solid #1c2a3a;border-radius:8px;padding:10px 14px;margin-top:18px;font-size:12.5px;color:#93a9bd}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:20px;bottom:24px;z-index:40;border:0;border-radius:50%;
+  width:44px;height:44px;background:var(--brand);color:#fff;font-size:18px;cursor:pointer;
+  box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease
+}
+.to-top.show{opacity:1;pointer-events:auto}
+.to-top:hover{transform:translateY(-2px);background:var(--brand-2)}
+.to-top:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+@media (max-width:960px){
+  .layout{grid-template-columns:1fr}
+  .sidebar{order:2}
+  .hero .wrap{grid-template-columns:1fr;gap:24px;padding-top:38px;padding-bottom:40px}
+  .hero-art{min-height:0;max-width:420px}
+  .g3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .footer .cols{grid-template-columns:1fr 1fr}
+  .nav{display:none}
+  .nav.open{display:flex}
+  .menu-btn{display:inline-block}
+  .header .wrap{flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+  .nav{order:3;width:100%;margin:0;gap:2px}
+  .nav a{padding:6px 8px;font-size:13.5px}
+  .head-tools{order:2;margin-left:auto}
+}
+@media (max-width:640px){
+  body{font-size:15px}
+  .hero h1{font-size:30px}
+  .g3,.g2{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .compare .left{border-right:0;border-bottom:1px solid var(--line)}
+  .footer .cols{grid-template-columns:1fr}
+  .search input{width:110px}
+  .block{padding:18px}
+  .deep{padding:18px}
+  h2{font-size:21px}
+  .block-h h2{font-size:20px}
+  .hero .stats{gap:18px}
+  .to-top{right:14px;bottom:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .btn:hover,.to-top:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 公告条 -->
+<div class="announce" id="announce">
+  <div class="wrap">
+    <span class="dot" aria-hidden="true"></span>
+    <b>先锋资源在线观看</b>
+    <span class="tag">片源更新</span>
+    <span>11 月 7 日追更 12 部剧集，其中 5 部补齐 4K HDR 版本；《北岸档案》第 6 集 1080P 已修正音轨延迟问题。</span>
+    <a href="/#latest">查看更新清单</a>
+  </div>
+</div>
+
+<!-- 页头 -->
+<header class="header">
+  <div class="wrap">
+    <a class="brand" href="/#" aria-label="先锋资源在线观看首页">
+      <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#0e1b2a"/>
+        <path d="M18 20h12l6 10-6 10H18z" fill="#ff7a3d"/>
+        <path d="M34 20h12v20H34z" fill="#f2f5f8" opacity=".85"/>
+        <path d="M41 20h6v20h-6z" fill="#1b3a52"/>
+      </svg>
+      <span>
+        <span class="bt">先锋资源在线观看</span><br>
+        <span class="bs">Pioneer Source</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="siteNav" aria-label="主题导航">
+      <a href="/#overview">领域概览</a>
+      <a href="/#picks">精选推荐</a>
+      <a href="/#latest">最新更新</a>
+      <a href="/#cats">分类入口</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/#rank">榜单</a>
+    </nav>
+
+    <div class="head-tools">
+      <form class="search" role="search" id="searchForm" onsubmit="return false">
+        <input type="search" id="searchInput" placeholder="搜片名 / 版本" aria-label="站内搜索片名或版本">
+        <button type="button" id="searchBtn">搜索</button>
+      </form>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav">菜单</button>
+    </div>
+    <div class="search-result" id="searchResult" role="status" aria-live="polite"></div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="kicker">片源索引 · 版本对照 · 设备适配</span>
+      <h1>先锋资源在线观看</h1>
+      <p class="lead">按片名、画质版本和字幕组整理可检索的片源条目，标注码率、字幕语言与线路稳定性，帮助在电脑、平板和电视盒子之间挑到能顺利播完的那一条。</p>
+      <div class="stats">
+        <div><b>1,284</b>本月收录条目</div>
+        <div><b>96</b>本周新增版本</div>
+        <div><b>7</b>持续跟踪字幕组</div>
+      </div>
+      <div class="cta">
+        <a class="btn btn-primary" href="/#picks">进入精选片单</a>
+        <a class="btn btn-ghost" href="/#guide">查看播放设置</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 340" role="img">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ff7a3d"/>
+            <stop offset="1" stop-color="#f2562a"/>
+          </linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffffff" stop-opacity=".18"/>
+            <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <rect x="30" y="40" width="360" height="210" rx="14" fill="url(#g2)" stroke="#3a5b76"/>
+        <rect x="30" y="40" width="360" height="30" rx="14" fill="#173149"/>
+        <circle cx="50" cy="55" r="4" fill="#ff7a3d"/>
+        <circle cx="64" cy="55" r="4" fill="#4f7492"/>
+        <circle cx="78" cy="55" r="4" fill="#4f7492"/>
+        <rect x="52" y="86" width="106" height="66" rx="6" fill="url(#g1)" opacity=".9"/>
+        <rect x="52" y="160" width="106" height="8" rx="4" fill="#5c83a0"/>
+        <rect x="52" y="176" width="70" height="8" rx="4" fill="#3d5f7a"/>
+        <rect x="174" y="86" width="196" height="12" rx="6" fill="#c9dbe9" opacity=".7"/>
+        <rect x="174" y="108" width="160" height="8" rx="4" fill="#7f9dba"/>
+        <rect x="174" y="126" width="180" height="8" rx="4" fill="#5d7e9b"/>
+        <rect x="174" y="152" width="88" height="26" rx="13" fill="#ff7a3d"/>
+        <rect x="174" y="190" width="52" height="30" rx="6" fill="#25435c"/>
+        <rect x="234" y="190" width="52" height="30" rx="6" fill="#25435c"/>
+        <rect x="294" y="190" width="76" height="30" rx="6" fill="#25435c"/>
+        <rect x="30" y="266" width="360" height="46" rx="10" fill="#12263a" stroke="#2b4a63"/>
+        <rect x="46" y="282" width="70" height="14" rx="7" fill="#ff7a3d" opacity=".85"/>
+        <rect x="128" y="282" width="110" height="14" rx="7" fill="#3f6482"/>
+        <rect x="250" y="282" width="60" height="14" rx="7" fill="#3f6482"/>
+        <circle cx="368" cy="289" r="9" fill="#0f7a6c"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<main class="main">
+  <div class="wrap">
+    <div class="layout">
+
+      <!-- 主内容区 -->
+      <div class="content">
+
+        <!-- 1 领域概览 -->
+        <section class="block" id="overview">
+          <div class="block-h"><span class="bar"></span><h2>领域概览：片源索引到底在整理什么</h2></div>
+          <p>一个能用的片源条目，通常要同时交代四件事：文件规格、字幕组、发布位置、线路状态。文件规格看分辨率与码率，1080P 常见码率在 8–15 Mbps 区间，4K HDR 条目多数落在 35–60 Mbps；字幕组决定译名习惯和注释风格；发布位置影响下载方式；线路状态则决定手机端拖动进度条会不会卡。</p>
+          <div class="grid g3" style="margin-top:14px">
+            <div class="card">
+              <div class="bd">
+                <h3>规格层：分辨率与码率</h3>
+                <p>同一部片子的 1080P 版本，不同组压制后体积能差出 3 倍。码率低的版本在暗场景容易出现色块。</p>
+                <span class="tag">码率对照</span><span class="tag">暗场色块</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="bd">
+                <h3>字幕层：译名与时间轴</h3>
+                <p>简体硬字幕适合电视直接播，外挂 ASS 字幕保留特效注释，移动端播放器不一定完整渲染。</p>
+                <span class="tag">硬字幕</span><span class="tag">ASS 外挂</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="bd">
+                <h3>线路层：稳定与速度</h3>
+                <p>晚间 20:00–23:00 是高峰，部分线路缓冲次数明显上升。标注“夜间稳定”的条目一般有备份源。</p>
+                <span class="tag">高峰缓冲</span><span class="tag">备份源</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2 精选内容推荐 -->
+        <section class="block" id="picks">
+          <div class="block-h"><span class="bar"></span><h2>精选内容推荐：本周值得先看的 6 个条目</h2><span class="sub">按片源完整度排序</span></div>
+          <div class="grid g3">
+            <article class="card">
+              <img class="thumb" src="https://picsum.photos/seed/pioneer-north/480/260" width="480" height="260" loading="lazy" alt="《北岸档案》第一季片源封面示意图">
+              <div class="bd">
+                <h3><a href="/#deep">北岸档案 第一季 1080P 全 8 集</a></h3>
+                <p>央配国语 + 简体硬字幕，第 6 集音轨延迟已在 11 月 7 日修正，文件总大小 14.2 GB。</p>
+                <div class="meta"><span>剧集</span><span>11-07 更新</span><span>1080P</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="thumb" src="https://picsum.photos/seed/pioneer-tide/480/260" width="480" height="260" loading="lazy" alt="纪录片《潮汐线以东》海岸线镜头示意图">
+              <div class="bd">
+                <h3><a href="/#latest">潮汐线以东 4K HDR 纪录片</a></h3>
+                <p>三集完整，HDR10 版本带简体与繁体双语字幕，建议电视盒子或支持 HDR 的显示器播放。</p>
+                <div class="meta"><span>纪录片</span><span>11-06 更新</span><span>4K</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="thumb" src="https://picsum.photos/seed/pioneer-lamp/480/260" width="480" height="260" loading="lazy" alt="《夜灯》独立电影街景示意图">
+              <div class="bd">
+                <h3><a href="/#comments">夜灯 独立电影 1080P</a></h3>
+                <p>仅一条稳定线路，文件 2.8 GB，外挂 ASS 字幕含导演注释，移动端播放建议先转成 SRT。</p>
+                <div class="meta"><span>电影</span><span>11-05 更新</span><span>1080P</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="thumb" src="https://picsum.photos/seed/pioneer-forge/480/260" width="480" height="260" loading="lazy" alt="《铁砧计划》工业题材剧集场景示意图">
+              <div class="bd">
+                <h3><a href="/#latest">铁砧计划 第二季 更新至第 5 集</a></h3>
+                <p>每周四更新，1080P 与 720P 双版本，720P 体积约为一半，适合流量有限的移动端。</p>
+                <div class="meta"><span>剧集</span><span>11-06 更新</span><span>720P/1080P</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="thumb" src="https://picsum.photos/seed/pioneer-quiet/480/260" width="480" height="260" loading="lazy" alt="《静默频道》广播电台题材画面示意图">
+              <div class="bd">
+                <h3><a href="/#deep">静默频道 全 6 集 2160P</a></h3>
+                <p>码率 42 Mbps，暗场景细节保留完整。字幕组另附一份简繁对照表，适合二刷。</p>
+                <div class="meta"><span>剧集</span><span>11-04 更新</span><span>2160P</span></div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="thumb" src="https://picsum.photos/seed/pioneer-rail/480/260" width="480" height="260" loading="lazy" alt="《铁轨尽头》公路题材电影画面示意图">
+              <div class="bd">
+                <h3><a href="/#guide">铁轨尽头 1080P 修复版</a></h3>
+                <p>旧版有黑边裁切问题，修复版恢复 1.85:1 画幅，文件 4.1 GB，附简中与英文字幕轨。</p>
+                <div class="meta"><span>电影</span><span>11-03 更新</span><span>1080P</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 3 最新更新 -->
+        <section class="block" id="latest">
+          <div class="block-h"><span class="bar"></span><h2>最新更新：11 月 1 日至 11 月 8 日条目变动</h2></div>
+          <ul class="list-b">
+            <li><span class="num hot">新</span><div class="txt"><b>《北岸档案》第 6 集 1080P 音轨修正</b><span>旧文件存在约 240 ms 延迟，替换后总大小由 1.72 GB 变为 1.78 GB</span></div><span class="date">11-07</span></li>
+            <li><span class="num hot">新</span><div class="txt"><b>《潮汐线以东》第三集 4K HDR10 上线</b><span>新增 HDR 元数据，SDR 版本仍保留在独立条目中</span></div><span class="date">11-07</span></li>
+            <li><span class="num">补</span><div class="txt"><b>《铁砧计划》第二季第 5 集 720P 补种</b><span>原条目在 22:00 后缓冲频繁，补入第二条线路</span></div><span class="date">11-06</span></li>
+            <li><span class="num">修</span><div class="txt"><b>《夜灯》外挂字幕时间轴整体偏移 1.5 秒已重排</b><span>修正后与片源对齐，SRT 与 ASS 两版同时提供</span></div><span class="date">11-05</span></li>
+            <li><span class="num">补</span><div class="txt"><b>《静默频道》第 2 集简繁对照表补入</b><span>共 37 处译名差异，其中 9 处涉及人物称呼</span></div><span class="date">11-04</span></li>
+            <li><span class="num">修</span><div class="txt"><b>《铁轨尽头》修复版画幅校正</b><span>由 16:9 裁切改为原始 1.85:1，画面左右各恢复 40 像素</span></div><span class="date">11-03</span></li>
+            <li><span class="num">新</span><div class="txt"><b>《旧仓库》第一季 全 10 集 1080P 合集</b><span>单集平均 1.4 GB，合并条目后提供整季下载说明</span></div><span class="date">11-01</span></li>
+          </ul>
+        </section>
+
+        <!-- 4 分类入口 -->
+        <section class="block" id="cats">
+          <div class="block-h"><span class="bar"></span><h2>分类入口：按类型、画质与字幕组找条目</h2></div>
+          <p class="small muted" style="margin-bottom:10px">入口与条目属性一一对应，点击后定位到对应索引位置。</p>
+          <div class="cats">
+            <a class="cat" href="/#picks">剧集连播 <i>412 条</i></a>
+            <a class="cat" href="/#picks">独立电影 <i>286 条</i></a>
+            <a class="cat" href="/#picks">纪录片 <i>154 条</i></a>
+            <a class="cat" href="/#latest">1080P 硬字幕 <i>331 条</i></a>
+            <a class="cat" href="/#latest">4K HDR 片源 <i>97 条</i></a>
+            <a class="cat" href="/#deep">外挂 ASS 字幕 <i>168 条</i></a>
+            <a class="cat" href="/#guide">国语配音版 <i>74 条</i></a>
+            <a class="cat" href="/#comments">修复版 / 重制版 <i>43 条</i></a>
+            <a class="cat" href="/#latest">每周追更条目 <i>61 条</i></a>
+            <a class="cat" href="/#rank">高码率精选 <i>35 条</i></a>
+          </div>
+        </section>
+
+        <!-- 5 深度解析 -->
+        <section class="deep" id="deep">
+          <div class="block-h"><span class="bar"></span><h2>深度解析：码率标注可信吗，版本差距到底在哪</h2></div>
+
+          <p>围绕片源质量的讨论里，最容易吵架的一句是“4K 就是比 1080P 清楚”。把《静默频道》第 3 集的两版文件放在同一台 55 英寸电视上对比，结论要复杂得多：4K 版文件 6.9 GB，码率 42 Mbps；1080P 版 1.6 GB，码率约 12 Mbps。在白天窗外明亮的场景中，两者的观感差距并不大；到了夜间室内戏，4K 版能看清桌面纸张边缘，1080P 版出现成片色块。</p>
+
+          <h3>一、把“4K”拆成三个可核对项</h3>
+          <p>分辨率只是入口，真正决定观感的是码率、源片母版和编码参数。以下三项都可以在播放器的媒体信息里直接看到。</p>
+          <table class="verify">
+            <thead><tr><th>核对项</th><th>《静默频道》第 3 集 4K 版</th><th>同集 1080P 版</th></tr></thead>
+            <tbody>
+              <tr><td>分辨率</td><td>3840×2160</td><td>1920×1080</td></tr>
+              <tr><td>视频码率</td><td>42.1 Mbps</td><td>11.8 Mbps</td></tr>
+              <tr><td>编码</td><td>HEVC Main10</td><td>H.264 High</td></tr>
+              <tr><td>音轨</td><td>DDP 5.1 640 kbps</td><td>AAC 2.0 192 kbps</td></tr>
+              <tr><td>文件体积</td><td>6.9 GB</td><td>1.6 GB</td></tr>
+            </tbody>
+          </table>
+          <p>同一集内容，码率差 3.5 倍，体积差 4.3 倍。如果播放设备只支持 H.264，强行选 4K 版会出现软解卡顿，拖动进度条后音画不同步。判断方法很直接：打开播放器信息面板，看“解码器”一栏是硬解还是软解，再决定选哪版。</p>
+
+          <h3>二、字幕组的译名差异会改变理解</h3>
+          <p>《静默频道》里反复出现的一个广播术语，两个字幕组分别译成“载波”和“载频”。前者偏工程口语，后者更接近教材写法。11 月 4 日补入的简繁对照表记录 37 处差异，其中 9 处涉及人物称呼，比如“台长”与“站长”。追剧中途换字幕组，容易在人物关系上产生错觉。可核对的做法是：固定一个字幕组追完一季，跨组对比时先看人物称呼表。</p>
+          <div class="quote">“第 4 集两人对话里，‘载频’被译成‘频段’，前后指的不是同一个东西。”——条目评论区 11 月 5 日留言，说的是字幕组 A 的版本。此说法在 11 月 6 日被另一位用户用时间码 00:23:41 复核实为误译，字幕组已在修订版中改为“载频”。</div>
+
+          <h3>三、线路稳定性的判断标准</h3>
+          <p>“夜间稳定”不是形容词，可以用数字验证。以《铁砧计划》第二季第 5 集为例，11 月 6 日 21:40 至 22:30 之间，原线路出现 4 次缓冲，单次 3–6 秒；补入的第二条线路同一时段缓冲 1 次，时长 2 秒。这个对比只在当晚有效，第二天高峰可能变化。更可靠的做法是记录一周内同一时段的缓冲次数，再看是否稳定。</p>
+
+          <h3>四、一个可被反驳的判断</h3>
+          <p>常听到的说法是“文件越大画质越好”。在《潮汐线以东》第三集上，这个判断不成立：4K HDR 版 8.2 GB，另一版 4K SDR 重编码 5.6 GB，后者在 SDR 显示器上反而色彩更准，因为 HDR 转 SDR 的映射由播放器完成，部分电视盒子映射后发灰。如果设备不支持 HDR，选 SDR 重编码版更合适。判断依据是播放器信息里的“色彩空间”字段，不是体积。</p>
+          <p>版本选择没有统一答案。屏幕尺寸、解码能力、带宽、字幕需求都会改变结论。把上面四组数字记下来，比记一句口号有用。</p>
+        </section>
+
+        <!-- 6 体验指南 -->
+        <section class="block" id="guide">
+          <div class="block-h"><span class="bar"></span><h2>体验指南：从找条目到顺利播完的四步</h2></div>
+          <ol class="steps">
+            <li><b>先定设备，再定版本</b>电视盒子优先 1080P H.264 硬字幕；支持 HEVC 的电视可选 4K，播放器信息里确认硬解开启。</li>
+            <li><b>检查字幕轨与时间轴</b>外挂字幕先看开头 30 秒是否对齐，ASS 特效字幕在移动端可能丢注释，必要时换 SRT。</li>
+            <li><b>高峰时段做一次缓冲测试</b>晚 20:00 后拖动进度条三次，记录缓冲次数；超过两次就换备份线路。</li>
+            <li><b>下载与在线二选一</b>追更剧集用在线更省空间；修复版或高码率片源建议先下载，避免播放中途重新缓冲。</li>
+          </ol>
+          <div class="compare" style="margin-top:16px">
+            <div class="left">
+              <h4>在线播放适合</h4>
+              <ul>
+                <li>每周追更的剧集，单集 1–2 GB</li>
+                <li>移动端观看，流量充足</li>
+                <li>临时试看，不想占用存储</li>
+              </ul>
+            </div>
+            <div class="right">
+              <h4>下载保存适合</h4>
+              <ul>
+                <li>4K HDR 高码率片源</li>
+                <li>外挂字幕需要本地匹配</li>
+                <li>网络高峰不稳定的时段</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 7 FAQ -->
+        <section class="block" id="faq">
+          <div class="block-h"><span class="bar"></span><h2>FAQ：播放与版本选择的常见问题</h2></div>
+
+          <details>
+            <summary>1080P 和 4K 片源在手机上看起来差别大吗</summary>
+            <div class="ans">手机屏幕尺寸小，1080P 与 4K 的清晰度差距在正常观看距离下不明显。差别更多体现在暗场景色块和码率不足导致的拖影。流量有限时选 1080P 更划算，单集体积通常只有 4K 版的四分之一。</div>
+          </details>
+          <details>
+            <summary>外挂 ASS 字幕在电视上显示不全怎么办</summary>
+            <div class="ans">多数电视盒子播放器对 ASS 特效支持有限，位置偏移、字体替换是常见问题。把 ASS 转成 SRT 可以保留对白、丢掉特效；如果字幕含注释，建议改用支持 libass 的播放器。</div>
+          </details>
+          <details>
+            <summary>为什么同一集有两个文件大小差很多</summary>
+            <div class="ans">压制参数不同。码率、编码格式、音轨规格都会影响体积。《静默频道》第 3 集两版体积差 4.3 倍，主要来自码率与 HEVC/H.264 编码差异，不是片长不同。</div>
+          </details>
+          <details>
+            <summary>夜间缓冲频繁，换线路还是换时间</summary>
+            <div class="ans">先换线路。11 月 6 日《铁砧计划》第 5 集的高峰测试里，备份线路缓冲次数从 4 次降到 1 次。若备份线路同样频繁，再考虑错峰，21:00 前后通常是压力最大的时段。</div>
+          </details>
+          <details>
+            <summary>国语配音版和原声版字幕对不上</summary>
+            <div class="ans">配音会改写台词长度，原声字幕直接套用会出现提前或滞后。选择标注“国语配音专用字幕”的条目，或在播放器里单独调整字幕延迟，通常偏移在 0.5–2 秒之间。</div>
+          </details>
+          <details>
+            <summary>修复版和原版该选哪个</summary>
+            <div class="ans">修复版主要改画幅、音轨或画质。以《铁轨尽头》为例，修复版恢复 1.85:1 画幅，左右各多出 40 像素画面；原版是 16:9 裁切。在意构图选修复版，只是随便看看则区别不大。</div>
+          </details>
+        </section>
+
+        <!-- 8 用户评论 -->
+        <section class="block" id="comments">
+          <div class="block-h"><span class="bar"></span><h2>用户评论：条目下的真实反馈</h2><span class="sub">含中性评价</span></div>
+          <div class="comments">
+            <div class="cmt">
+              <div class="ch"><span class="av">陆</span><span class="nm">陆行舟</span><span class="tm">11-07 22:14</span></div>
+              <p>《北岸档案》第 6 集换过文件后音轨对上了，之前那句台词总是慢半拍。文件大了 60 MB，值。</p>
+              <span class="ref">指向条目：北岸档案 第一季 第 6 集</span>
+            </div>
+            <div class="cmt">
+              <div class="ch"><span class="av">周</span><span class="nm">周末不加班</span><span class="tm">11-07 20:38</span></div>
+              <p>《潮汐线以东》第三集 4K 在电视上颜色偏灰，换了播放器才正常。片源本身没问题，是盒子映射的锅。</p>
+              <span class="ref">指向条目：潮汐线以东 第三集 4K HDR</span>
+            </div>
+            <div class="cmt">
+              <div class="ch"><span class="av">陈</span><span class="nm">陈默</span><span class="tm">11-06 23:02</span></div>
+              <p>铁砧计划第二季的更新节奏挺稳，周四晚上基本能刷到，就是 720P 那版暗处糊得比较明显。</p>
+              <span class="ref">指向条目：铁砧计划 第二季 第 5 集</span>
+            </div>
+            <div class="cmt">
+              <div class="ch"><span class="av">许</span><span class="nm">许一川</span><span class="tm">11-06 19:47</span></div>
+              <p>一般般。条目信息写得细，但有些线路速度实在慢，标着稳定，实际拖进度条要等三秒。</p>
+            </div>
+            <div class="cmt">
+              <div class="ch"><span class="av">何</span><span class="nm">何小满</span><span class="tm">11-05 21:30</span></div>
+              <p>《夜灯》的字幕重排后对上了，之前人物一开口字幕还没出来。独立电影能有人做注释字幕不容易。</p>
+              <span class="ref">指向条目：夜灯 独立电影 1080P</span>
+            </div>
+            <div class="cmt">
+              <div class="ch"><span class="av">林</span><span class="nm">林深</span><span class="tm">11-05 14:12</span></div>
+              <p>静默频道简繁对照表里“载波”和“载频”的差异写得很清楚，二刷才发现自己第一遍理解偏了。</p>
+              <span class="ref">指向条目：静默频道 全 6 集</span>
+            </div>
+            <div class="cmt">
+              <div class="ch"><span class="av">高</span><span class="nm">高野</span><span class="tm">11-04 10:26</span></div>
+              <p>修复版画幅确实宽了，但旧版黑边也不是不能看。对构图没那么讲究的话，两个版随便挑。</p>
+              <span class="ref">指向条目：铁轨尽头 修复版</span>
+            </div>
+            <div class="cmt">
+              <div class="ch"><span class="av">罗</span><span class="nm">罗盘</span><span class="tm">11-03 18:55</span></div>
+              <p>建议给 4K 条目都标个解码要求，我旧盒子开 HEVC 直接黑屏，找半天才知道是设备问题。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 9 相关资讯 -->
+        <section class="block" id="news">
+          <div class="block-h"><span class="bar"></span><h2>相关资讯：片源版本与播放器的动态</h2></div>
+          <div class="news">
+            <div class="news-item">
+              <div class="nd">11月<br><b>07</b></div>
+              <div>
+                <h3>多部剧集补齐 HEVC 硬解说明</h3>
+                <p>条目页新增“解码要求”字段，标出 H.264 与 HEVC 两种规格，避免设备不匹配导致的卡顿。</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="nd">11月<br><b>05</b></div>
+              <div>
+                <h3>外挂字幕时间轴校验流程调整</h3>
+                <p>新入库的 ASS 字幕需附带 00:00:30 与 00:45:00 两个时间点的对齐记录，减少偏移问题。</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="nd">11月<br><b>02</b></div>
+              <div>
+                <h3>线路稳定性标注改为周内统计</h3>
+                <p>原先按单次测试标注，改为连续 7 天同一时段缓冲次数统计，数字波动更小。</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="nd">11月<br><b>01</b></div>
+              <div>
+                <h3>旧仓库第一季整季合集条目上线</h3>
+                <p>10 集合并为单一条目，单集平均 1.4 GB，附整季总览与分集跳转说明。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 10 相关推荐 -->
+        <section class="block" id="related">
+          <div class="block-h"><span class="bar"></span><h2>相关推荐：按关键词找更多条目</h2></div>
+          <div class="tags-index">
+            <a class="tag acc" href="/#picks">1080P 硬字幕剧集</a>
+            <a class="tag" href="/#latest">4K HDR 纪录片片源</a>
+            <a class="tag teal" href="/#deep">外挂 ASS 字幕电影</a>
+            <a class="tag" href="/#guide">国语配音版条目</a>
+            <a class="tag gold" href="/#comments">修复版画幅对照</a>
+            <a class="tag" href="/#latest">每周四更新剧集</a>
+            <a class="tag" href="/#rank">高码率暗场细节</a>
+            <a class="tag teal" href="/#guide">电视盒子解码要求</a>
+            <a class="tag" href="/#latest">夜间稳定线路</a>
+            <a class="tag acc" href="/#picks">独立电影注释字幕</a>
+          </div>
+        </section>
+
+        <!-- 11 榜单 -->
+        <section class="block" id="rank">
+          <div class="block-h"><span class="bar"></span><h2>榜单：本周片源完整度排行</h2><span class="sub">按集数与字幕完整度</span></div>
+          <div class="rank">
+            <div class="rank-row"><span class="rk top">1</span><div class="info"><b>北岸档案 第一季</b><span>8 集全，国配 + 简中，音轨已修正</span></div><span class="val">完整度 100%</span></div>
+            <div class="rank-row"><span class="rk top">2</span><div class="info"><b>静默频道 全 6 集</b><span>2160P，简繁对照表，注释完整</span></div><span class="val">完整度 100%</span></div>
+            <div class="rank-row"><span class="rk top">3</span><div class="info"><b>潮汐线以东 三集</b><span>4K HDR10 与 SDR 双版本</span></div><span class="val">完整度 96%</span></div>
+            <div class="rank-row"><span class="rk">4</span><div class="info"><b>铁轨尽头 修复版</b><span>画幅校正，双语字幕轨</span></div><span class="val">完整度 92%</span></div>
+            <div class="rank-row"><span class="rk">5</span><div class="info"><b>旧仓库 第一季</b><span>10 集合集，单集信息待补</span></div><span class="val">完整度 88%</span></div>
+            <div class="rank-row"><span class="rk">6</span><div class="info"><b>铁砧计划 第二季</b><span>更新至第 5 集，双线路</span></div><span class="val">完整度 71%</span></div>
+            <div class="rank-row"><span class="rk">7</span><div class="info"><b>夜灯 独立电影</b><span>单线路，ASS 注释字幕</span></div><span class="val">完整度 64%</span></div>
+          </div>
+        </section>
+
+        <!-- 12 时间线与引语 -->
+        <section class="block" id="timeline">
+          <div class="block-h"><span class="bar"></span><h2>时间线：11 月第一周的版本变动</h2></div>
+          <ul class="timeline">
+            <li><b>11 月 1 日</b><span>旧仓库第一季整季合集上线，10 集合并。</span></li>
+            <li><b>11 月 3 日</b><span>铁轨尽头修复版画幅校正，恢复 1.85:1。</span></li>
+            <li><b>11 月 4 日</b><span>静默频道简繁对照表补入，记录 37 处差异。</span></li>
+            <li><b>11 月 5 日</b><span>夜灯外挂字幕时间轴重排，偏移 1.5 秒修正。</span></li>
+            <li><b>11 月 6 日</b><span>铁砧计划第 5 集补入第二条线路。</span></li>
+            <li><b>11 月 7 日</b><span>北岸档案第 6 集音轨修正；潮汐线以东 4K HDR10 上线。</span></li>
+          </ul>
+
+          <div class="quote-card" style="margin-top:18px">
+            <p>“追剧最怕中途换字幕组，人物称呼一变，前后关系就乱了。固定一组追完，比到处找资源省心。”</p>
+            <div class="who">—— 条目维护者 许野，11 月 5 日字幕校验说明</div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- 侧栏 -->
+      <aside class="sidebar" aria-label="侧栏导航与信息">
+        <div class="side-card">
+          <h3>栏目导航</h3>
+          <ul class="side-nav" id="sideNav">
+            <li><a href="/#overview">领域概览</a></li>
+            <li><a href="/#picks">精选内容推荐</a></li>
+            <li><a href="/#latest">最新更新</a></li>
+            <li><a href="/#cats">分类入口</a></li>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#guide">体验指南</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+            <li><a href="/#comments">用户评论</a></li>
+            <li><a href="/#news">相关资讯</a></li>
+            <li><a href="/#related">相关推荐</a></li>
+            <li><a href="/#rank">榜单</a></li>
+            <li><a href="/#timeline">时间线</a></li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h3>本周数据</h3>
+          <div class="side-meta">
+            <p><b>新增条目</b> 96<br><b>修正条目</b> 14<br><b>补齐 4K</b> 5<br><b>字幕重排</b> 3</p>
+            <p class="small">统计区间 11-01 至 11-08，来源为条目变动记录。</p>
+          </div>
+        </div>
+        <div class="side-card">
+          <h3>热词</h3>
+          <div>
+            <a class="tag acc" href="/#picks">1080P 硬字幕</a>
+            <a class="tag" href="/#latest">4K HDR</a>
+            <a class="tag teal" href="/#deep">ASS 字幕</a>
+            <a class="tag" href="/#guide">国语配音</a>
+            <a class="tag gold" href="/#comments">修复版</a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<!-- 页脚 -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="fbrand">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#16324a"/>
+            <path d="M18 20h12l6 10-6 10H18z" fill="#ff7a3d"/>
+            <path d="M34 20h12v20H34z" fill="#f2f5f8" opacity=".8"/>
+          </svg>
+          <b>先锋资源在线观看</b>
+        </div>
+        <p class="fd">按片名、画质与字幕组整理的片源索引，记录版本变动与线路状态，方便在设备与带宽之间做取舍。</p>
+      </div>
+      <div>
+        <h4>内容栏目</h4>
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选内容推荐</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#deep">深度解析</a>
+      </div>
+      <div>
+        <h4>使用参考</h4>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/#rank">榜单</a>
+        <a href="/#timeline">时间线</a>
+      </div>
+      <div>
+        <h4>互动与索引</h4>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#related">相关推荐</a>
+        <a href="/#cats">分类入口</a>
+      </div>
+    </div>
+    <div class="note">示例数据说明：页面条目、体积、码率与缓冲次数均为演示用示例，日期截至 2026 年 11 月 8 日，仅作结构展示，不构成下载或播放承诺。</div>
+    <div class="bottom">
+      <span>© 2026 先锋资源在线观看 · 内容索引示例站</span>
+      <span>页面更新：2026-11-08 · 对应更新项：北岸档案第 6 集音轨修正、潮汐线以东 4K HDR10 上线</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var nav = document.getElementById('siteNav');
+
+  if (menuBtn && nav) {
+    menuBtn.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuBtn.textContent = open ? '收起' : '菜单';
+    });
+    nav.addEventListener('click', function(e){
+      if (e.target.tagName === 'A' && window.innerWidth <= 960) {
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        menuBtn.textContent = '菜单';
+      }
+    });
+  }
+
+  var topBtn = document.getElementById('toTop');
+  if (topBtn) {
+    window.addEventListener('scroll', function(){
+      if (window.scrollY > 400) topBtn.classList.add('show');
+      else topBtn.classList.remove('show');
+    }, {passive:true});
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  var links = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = links.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  if ('IntersectionObserver' in window && sections.length) {
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) {
+          links.forEach(function(a){ a.classList.remove('active'); });
+          var target = links.filter(function(a){
+            return a.getAttribute('href').replace('/#','') === en.target.id;
+          })[0];
+          if (target) target.classList.add('active');
+        }
+      });
+    }, {rootMargin:'-120px 0px -60% 0px', threshold:0.1});
+    sections.forEach(function(s){ obs.observe(s); });
+  }
+
+  var input = document.getElementById('searchInput');
+  var sBtn = document.getElementById('searchBtn');
+  var out = document.getElementById('searchResult');
+  var items = [];
+  document.querySelectorAll('.block h2, .card h3, .list-b .txt b, details summary, .news-item h3, .rank-row .info b, .timeline b').forEach(function(el){
+    items.push({text: el.textContent.trim(), el: el});
+  });
+
+  function doSearch(){
+    var q = (input.value || '').trim().toLowerCase();
+    if (!q) {
+      out.className = 'search-result';
+      out.textContent = '';
+      return;
+    }
+    var hits = items.filter(function(it){ return it.text.toLowerCase().indexOf(q) > -1; });
+    if (!hits.length) {
+      out.className = 'search-result show';
+      out.textContent = '没有匹配“' + input.value.trim() + '”的条目，试试片名简称或画质关键词。';
+      return;
+    }
+    var first = hits[0].el;
+    out.className = 'search-result show';
+    out.textContent = '找到 ' + hits.length + ' 条，已定位至“' + hits[0].text + '”。';
+    var block = first.closest('.block, .deep');
+    if (block) {
+      var y = block.getBoundingClientRect().top + window.scrollY - 118;
+      window.scrollTo({top:y, behavior:'smooth'});
+    }
+  }
+
+  if (sBtn) sBtn.addEventListener('click', doSearch);
+  if (input) input.addEventListener('keydown', function(e){ if (e.key === 'Enter') doSearch(); });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"先锋资源在线观看",
+  "inLanguage":"zh-CN",
+  "description":"按片名、画质版本与字幕组整理的片源索引，记录版本变动与线路状态。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"1080P 和 4K 片源在手机上看起来差别大吗","acceptedAnswer":{"@type":"Answer","text":"手机屏幕尺寸小，1080P 与 4K 的清晰度差距在正常观看距离下不明显，差别更多体现在暗场景色块和码率不足导致的拖影。"}},
+    {"@type":"Question","name":"外挂 ASS 字幕在电视上显示不全怎么办","acceptedAnswer":{"@type":"Answer","text":"多数电视盒子播放器对 ASS 特效支持有限，把 ASS 转成 SRT 可保留对白、丢掉特效；含注释的字幕建议改用支持 libass 的播放器。"}},
+    {"@type":"Question","name":"为什么同一集有两个文件大小差很多","acceptedAnswer":{"@type":"Answer","text":"压制参数不同。码率、编码格式、音轨规格都会影响体积，体积差异主要来自码率与编码方式。"}},
+    {"@type":"Question","name":"夜间缓冲频繁，换线路还是换时间","acceptedAnswer":{"@type":"Answer","text":"先换线路。高峰测试中备份线路的缓冲次数通常更低；若备份线路同样频繁，再考虑错峰观看。"}},
+    {"@type":"Question","name":"国语配音版和原声版字幕对不上","acceptedAnswer":{"@type":"Answer","text":"配音会改写台词长度，原声字幕直接套用会出现提前或滞后，可选择标注国语配音专用字幕的条目或单独调整字幕延迟。"}},
+    {"@type":"Question","name":"修复版和原版该选哪个","acceptedAnswer":{"@type":"Answer","text":"修复版主要改画幅、音轨或画质，例如恢复原始宽银幕比例；在意构图选修复版，只是随便看看则区别不大。"}}
+  ]
+}
+</script>
+</body>
+                                                                 </html>
