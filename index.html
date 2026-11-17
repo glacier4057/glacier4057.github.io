@@ -1,0 +1,1068 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>女王羞辱踩踏-支配系角色扮演指南</title>
+<meta name="description" content="女王羞辱踩踏是支配系角色扮演中的核心玩法，涵盖从语言羞辱到脚下踩踏的场景分级、安全约定与谈判流程。本文整理十二类羞耻场景条目、三份实操体验清单和常见误区，帮你分清角色剧本与真实边界。">
+<meta name="keywords" content="女王羞辱踩踏">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b0d14'/%3E%3Cpath d='M9 22 L16 8 L23 22 Z' fill='%23c9a227'/%3E%3Ccircle cx='16' cy='24' r='2.4' fill='%23c9a227'/%3E%3C/svg%3E">
+<style>
+:root{
+  --c-bg:#faf6f2;
+  --c-surface:#ffffff;
+  --c-surface-2:#f2e9e1;
+  --c-ink:#241a1c;
+  --c-ink-2:#5a4a4e;
+  --c-ink-3:#8a767b;
+  --c-main:#6e1230;
+  --c-main-deep:#3c0a1a;
+  --c-accent:#c9a227;
+  --c-accent-soft:#f6ebcb;
+  --c-line:#e4d8d0;
+  --c-line-2:#cdb8b0;
+  --f-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --f-serif:"Songti SC","Noto Serif SC","SimSun",serif;
+  --fs-xs:12px;--fs-s:13px;--fs-m:15px;--fs-l:18px;--fs-xl:24px;--fs-2xl:32px;--fs-3xl:42px;
+  --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:48px;--sp-8:64px;
+  --r-s:6px;--r-m:10px;--r-l:16px;
+  --sh-s:0 1px 2px rgba(60,10,26,.06);
+  --sh-m:0 4px 14px rgba(60,10,26,.08);
+  --sh-l:0 10px 30px rgba(60,10,26,.12);
+  --ann-h:38px;
+  --head-h:62px;
+  --stick:calc(var(--ann-h) + var(--head-h));
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--c-bg);color:var(--c-ink);
+  font-family:var(--f-sans);font-size:var(--fs-m);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--c-main);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700}
+p{margin:0 0 var(--sp-3)}
+ul,ol{margin:0 0 var(--sp-3);padding-left:1.2em}
+li{margin-bottom:var(--sp-1)}
+:focus-visible{outline:3px solid var(--c-accent);outline-offset:2px;border-radius:var(--r-s)}
+
+/* ===== 吸顶公告 + 页头 ===== */
+.announce{
+  position:sticky;top:0;z-index:60;height:var(--ann-h);
+  background:var(--c-main-deep);color:#f2e2c8;
+  display:flex;align-items:center;justify-content:center;
+  font-size:var(--fs-xs);letter-spacing:.02em;padding:0 var(--sp-4);
+}
+.announce b{color:var(--c-accent);font-weight:700;margin-right:var(--sp-2)}
+.head{
+  position:sticky;top:var(--ann-h);z-index:55;height:var(--head-h);
+  background:rgba(250,246,242,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--c-line);
+  display:flex;align-items:center;
+}
+.head-in{
+  width:100%;max-width:1200px;margin:0 auto;padding:0 var(--sp-4);
+  display:flex;align-items:center;gap:var(--sp-4);
+}
+.brand{display:flex;align-items:center;gap:var(--sp-2);flex-shrink:0}
+.brand svg{display:block}
+.brand-txt{font-family:var(--f-serif);font-size:var(--fs-l);font-weight:700;color:var(--c-main-deep);letter-spacing:.04em;white-space:nowrap}
+.nav{display:flex;gap:var(--sp-1);flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{
+  padding:6px 10px;border-radius:var(--r-s);color:var(--c-ink-2);
+  font-size:var(--fs-s);white-space:nowrap;
+}
+.nav a:hover{background:var(--c-surface-2);color:var(--c-main);text-decoration:none}
+.nav a.on{color:var(--c-main);background:var(--c-accent-soft);font-weight:600}
+.search{display:flex;align-items:center;gap:var(--sp-1);flex-shrink:0}
+.search input{
+  width:150px;padding:6px 10px;border:1px solid var(--c-line-2);border-radius:var(--r-s);
+  background:var(--c-surface);font-size:var(--fs-s);font-family:inherit;color:var(--c-ink);
+}
+.search button{
+  padding:6px 12px;border:0;border-radius:var(--r-s);background:var(--c-main);color:#fff;
+  font-size:var(--fs-s);font-family:inherit;cursor:pointer;
+}
+.search button:hover{background:var(--c-main-deep)}
+.menu-btn{
+  display:none;background:var(--c-surface);border:1px solid var(--c-line-2);
+  border-radius:var(--r-s);padding:6px 10px;font-size:var(--fs-s);font-family:inherit;
+  color:var(--c-main-deep);cursor:pointer;
+}
+.search-msg{
+  max-width:1200px;margin:0 auto;padding:0 var(--sp-4);
+  font-size:var(--fs-s);color:var(--c-main);
+}
+
+/* ===== 锚点偏移 ===== */
+section[id],div[id].anchor{scroll-margin-top:calc(var(--stick) + 12px)}
+
+/* ===== 首屏 ===== */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(160deg,var(--c-main-deep) 0%,#521025 55%,#2b0d14 100%);
+  color:#f7ece8;
+}
+.hero-in{
+  max-width:1200px;margin:0 auto;padding:var(--sp-8) var(--sp-4) var(--sp-7);
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  gap:var(--sp-7);align-items:center;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:var(--sp-2);
+  font-size:var(--fs-xs);letter-spacing:.18em;color:var(--c-accent);
+  border:1px solid rgba(201,162,39,.45);border-radius:999px;
+  padding:4px 12px;margin-bottom:var(--sp-4);
+}
+.hero h1{
+  font-family:var(--f-serif);font-size:var(--fs-3xl);letter-spacing:.06em;
+  color:#fff;margin-bottom:var(--sp-4);
+}
+.hero-desc{font-size:var(--fs-m);color:#e6cfc9;max-width:34em;margin-bottom:var(--sp-5)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:var(--sp-3)}
+.btn{
+  display:inline-block;padding:10px 20px;border-radius:var(--r-s);
+  font-size:var(--fs-m);font-family:inherit;border:1px solid transparent;cursor:pointer;
+}
+.btn-main{background:var(--c-accent);color:#2b0d14;font-weight:700}
+.btn-main:hover{background:#dcb337;text-decoration:none}
+.btn-ghost{border-color:rgba(247,236,232,.4);color:#f7ece8}
+.btn-ghost:hover{background:rgba(247,236,232,.1);text-decoration:none}
+.hero-facts{
+  display:flex;gap:var(--sp-5);margin-top:var(--sp-6);flex-wrap:wrap;
+  border-top:1px solid rgba(247,236,232,.16);padding-top:var(--sp-4);
+}
+.hero-facts div{min-width:88px}
+.hero-facts strong{display:block;font-size:var(--fs-xl);color:var(--c-accent);font-family:var(--f-serif)}
+.hero-facts span{font-size:var(--fs-xs);color:#c9aca6}
+.hero-art{position:relative;display:flex;justify-content:center}
+.hero-art svg{width:100%;max-width:360px;height:auto;filter:drop-shadow(0 14px 34px rgba(0,0,0,.35))}
+
+/* ===== 布局 ===== */
+.wrap{max-width:1200px;margin:0 auto;padding:var(--sp-7) var(--sp-4) var(--sp-8)}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:var(--sp-6);align-items:start}
+.main-col{min-width:0}
+.side{position:sticky;top:calc(var(--stick) + 16px);display:flex;flex-direction:column;gap:var(--sp-4)}
+.side-card{
+  background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r-m);
+  padding:var(--sp-4);box-shadow:var(--sh-s);
+}
+.side-card h3{font-size:var(--fs-s);letter-spacing:.08em;color:var(--c-ink-3);margin-bottom:var(--sp-3);font-weight:600}
+.side-nav{display:flex;flex-direction:column;gap:2px}
+.side-nav a{
+  display:block;padding:5px 10px;border-left:3px solid transparent;
+  border-radius:0 var(--r-s) var(--r-s) 0;color:var(--c-ink-2);font-size:var(--fs-s);
+}
+.side-nav a:hover{background:var(--c-surface-2);text-decoration:none}
+.side-nav a.on{border-left-color:var(--c-main);background:var(--c-accent-soft);color:var(--c-main-deep);font-weight:600}
+
+/* ===== 板块通用 ===== */
+.sec{margin-bottom:var(--sp-7)}
+.sec-head{margin-bottom:var(--sp-4)}
+.sec-kicker{font-size:var(--fs-xs);letter-spacing:.2em;color:var(--c-main);font-weight:700}
+.sec h2{
+  font-family:var(--f-serif);font-size:var(--fs-2xl);color:var(--c-main-deep);
+  margin:var(--sp-1) 0 var(--sp-2);letter-spacing:.02em;
+}
+.sec-sub{color:var(--c-ink-2);font-size:var(--fs-s);max-width:46em}
+.sec h3{font-size:var(--fs-l);color:var(--c-main-deep);margin:var(--sp-5) 0 var(--sp-2)}
+
+.card{
+  background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r-m);
+  box-shadow:var(--sh-s);
+}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-4)}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-4)}
+
+/* 概览 */
+.ov-card{padding:var(--sp-4)}
+.ov-card h3{font-size:var(--fs-m);color:var(--c-main-deep);margin-bottom:var(--sp-2)}
+.ov-card p{font-size:var(--fs-s);color:var(--c-ink-2);margin:0}
+.ov-card .num{font-family:var(--f-serif);font-size:var(--fs-xl);color:var(--c-accent);display:block;line-height:1.2}
+
+/* 精选 */
+.pick{
+  display:grid;grid-template-columns:minmax(0,1fr) 132px;gap:var(--sp-4);
+  padding:var(--sp-4);align-items:start;
+}
+.pick img{width:132px;height:96px;object-fit:cover;border-radius:var(--r-s)}
+.pick-tag{font-size:var(--fs-xs);color:var(--c-main);font-weight:700;letter-spacing:.06em}
+.pick h3{font-size:var(--fs-m);margin:var(--sp-1) 0}
+.pick p{font-size:var(--fs-s);color:var(--c-ink-2);margin:0}
+.meta{font-size:var(--fs-xs);color:var(--c-ink-3);margin-top:var(--sp-2)}
+
+/* 最新更新时间线 */
+.timeline{list-style:none;padding:0;margin:0;border-left:2px solid var(--c-line-2);padding-left:var(--sp-4)}
+.timeline li{position:relative;padding-bottom:var(--sp-4)}
+.timeline li::before{
+  content:"";position:absolute;left:calc(-1 * var(--sp-4) - 6px);top:7px;
+  width:10px;height:10px;border-radius:50%;background:var(--c-accent);
+  border:2px solid var(--c-bg);
+}
+.timeline time{font-size:var(--fs-xs);color:var(--c-main);font-weight:700;letter-spacing:.04em}
+.timeline h3{font-size:var(--fs-m);margin:2px 0 var(--sp-1)}
+.timeline p{font-size:var(--fs-s);color:var(--c-ink-2);margin:0}
+
+/* 分类入口 */
+.chips{display:flex;flex-wrap:wrap;gap:var(--sp-2)}
+.chips a{
+  display:inline-block;padding:6px 14px;border-radius:999px;
+  border:1px solid var(--c-line-2);background:var(--c-surface);
+  color:var(--c-ink-2);font-size:var(--fs-s);
+}
+.chips a:hover{background:var(--c-main);border-color:var(--c-main);color:#fff;text-decoration:none}
+.chips a .n{color:var(--c-ink-3);font-size:var(--fs-xs);margin-left:4px}
+.chips a:hover .n{color:#e6cfc9}
+
+/* 深度解析 */
+.article{
+  background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r-l);
+  padding:var(--sp-5) var(--sp-6);box-shadow:var(--sh-m);
+}
+.article h2{font-size:var(--fs-2xl)}
+.article h3{font-size:var(--fs-l);margin-top:var(--sp-5)}
+.article p{font-size:var(--fs-m);color:var(--c-ink)}
+.article .lead{font-size:var(--fs-l);font-family:var(--f-serif);color:var(--c-main-deep);line-height:1.7}
+.quotebox{
+  margin:var(--sp-4) 0;padding:var(--sp-4);
+  background:var(--c-surface-2);border-left:4px solid var(--c-accent);border-radius:0 var(--r-s) var(--r-s) 0;
+  font-family:var(--f-serif);font-size:var(--fs-m);color:var(--c-main-deep);
+}
+.cmp{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  border:1px solid var(--c-line-2);border-radius:var(--r-m);overflow:hidden;margin:var(--sp-4) 0;
+  font-size:var(--fs-s);
+}
+.cmp > div{padding:var(--sp-3) var(--sp-4)}
+.cmp .h{background:var(--c-main-deep);color:#f2e2c8;font-weight:700}
+.cmp .c{background:var(--c-surface)}
+.cmp .c:nth-child(odd){background:var(--c-surface-2)}
+table.data{
+  width:100%;border-collapse:collapse;font-size:var(--fs-s);margin:var(--sp-4) 0;
+  background:var(--c-surface);border:1px solid var(--c-line-2);border-radius:var(--r-s);overflow:hidden;
+}
+table.data th,table.data td{padding:8px 10px;border-bottom:1px solid var(--c-line);text-align:left}
+table.data th{background:var(--c-surface-2);color:var(--c-main-deep);font-weight:700}
+table.data tr:last-child td{border-bottom:0}
+
+/* 体验指南步骤 */
+.steps{list-style:none;padding:0;margin:0;counter-reset:st}
+.steps li{
+  position:relative;padding:var(--sp-3) 0 var(--sp-3) var(--sp-6);
+  border-bottom:1px dashed var(--c-line);counter-increment:st;
+}
+.steps li:last-child{border-bottom:0}
+.steps li::before{
+  content:counter(st);position:absolute;left:0;top:var(--sp-3);
+  width:30px;height:30px;border-radius:50%;background:var(--c-main);color:#fff;
+  font-family:var(--f-serif);font-weight:700;font-size:var(--fs-s);
+  display:flex;align-items:center;justify-content:center;
+}
+.steps h3{font-size:var(--fs-m);margin:0 0 2px}
+.steps p{font-size:var(--fs-s);color:var(--c-ink-2);margin:0}
+
+/* FAQ */
+details.faq{
+  background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r-m);
+  margin-bottom:var(--sp-2);overflow:hidden;
+}
+details.faq summary{
+  cursor:pointer;padding:var(--sp-3) var(--sp-4);font-weight:600;font-size:var(--fs-m);
+  color:var(--c-main-deep);list-style:none;position:relative;padding-right:40px;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{
+  content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  font-size:20px;color:var(--c-main);font-weight:400;
+}
+details.faq[open] summary::after{content:"−"}
+details.faq .ans{padding:0 var(--sp-4) var(--sp-4);font-size:var(--fs-s);color:var(--c-ink-2)}
+
+/* 评论 */
+.cmt-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-4)}
+.cmt{padding:var(--sp-4)}
+.cmt-head{display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2)}
+.avatar{
+  width:34px;height:34px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--f-serif);font-weight:700;color:#fff;font-size:var(--fs-s);
+}
+.cmt-name{font-size:var(--fs-s);font-weight:700;color:var(--c-main-deep)}
+.cmt-name small{display:block;font-weight:400;color:var(--c-ink-3);font-size:var(--fs-xs)}
+.cmt p{font-size:var(--fs-s);margin:0;color:var(--c-ink)}
+.cmt .ref{
+  display:inline-block;margin-top:var(--sp-2);padding:2px 8px;border-radius:4px;
+  background:var(--c-accent-soft);color:var(--c-main-deep);font-size:var(--fs-xs);
+}
+
+/* 资讯列表 */
+.news{list-style:none;padding:0;margin:0}
+.news li{display:flex;gap:var(--sp-3);padding:var(--sp-3) 0;border-bottom:1px solid var(--c-line)}
+.news li:last-child{border-bottom:0}
+.news time{font-size:var(--fs-xs);color:var(--c-main);white-space:nowrap;font-weight:700;padding-top:3px}
+.news h3{font-size:var(--fs-m);margin:0 0 2px}
+.news p{font-size:var(--fs-s);color:var(--c-ink-2);margin:0}
+
+/* 榜单 */
+.rank{list-style:none;padding:0;margin:0;counter-reset:rk}
+.rank li{
+  display:flex;gap:var(--sp-3);align-items:baseline;
+  padding:var(--sp-3) 0;border-bottom:1px solid var(--c-line);counter-increment:rk;
+}
+.rank li:last-child{border-bottom:0}
+.rank li::before{
+  content:counter(rk);font-family:var(--f-serif);font-size:var(--fs-l);
+  color:var(--c-accent);font-weight:700;min-width:26px;
+}
+.rank li:nth-child(-n+3)::before{color:var(--c-main)}
+.rank b{font-size:var(--fs-m);color:var(--c-main-deep)}
+.rank span{font-size:var(--fs-s);color:var(--c-ink-2)}
+
+/* 标签 */
+.tagcloud{display:flex;flex-wrap:wrap;gap:var(--sp-2)}
+.tagcloud a{
+  display:inline-block;padding:4px 12px;border-radius:var(--r-s);
+  background:var(--c-surface);border:1px solid var(--c-line-2);
+  font-size:var(--fs-s);color:var(--c-ink-2);
+}
+.tagcloud a:hover{background:var(--c-accent-soft);border-color:var(--c-accent);color:var(--c-main-deep);text-decoration:none}
+
+/* 页脚 */
+.foot{background:var(--c-main-deep);color:#d8c2bd;font-size:var(--fs-s)}
+.foot-in{
+  max-width:1200px;margin:0 auto;padding:var(--sp-7) var(--sp-4) var(--sp-5);
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--sp-5);
+}
+.foot .brand-txt{color:#fff;font-size:var(--fs-l)}
+.foot h3{font-size:var(--fs-s);color:var(--c-accent);letter-spacing:.1em;margin-bottom:var(--sp-2)}
+.foot ul{list-style:none;padding:0;margin:0}
+.foot li{margin-bottom:var(--sp-1)}
+.foot a{color:#d8c2bd}
+.foot a:hover{color:#fff}
+.foot-bottom{
+  border-top:1px solid rgba(216,194,189,.18);
+  max-width:1200px;margin:0 auto;padding:var(--sp-4);
+  display:flex;flex-wrap:wrap;gap:var(--sp-3);justify-content:space-between;
+  font-size:var(--fs-xs);color:#a98f8a;
+}
+
+/* 回到顶部 */
+.totop{
+  position:fixed;right:20px;bottom:24px;z-index:70;
+  width:44px;height:44px;border-radius:50%;border:0;
+  background:var(--c-main);color:#fff;font-size:18px;cursor:pointer;
+  box-shadow:var(--sh-m);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;
+}
+.totop.show{opacity:1;pointer-events:auto}
+.totop:hover{background:var(--c-main-deep)}
+
+/* 响应式 */
+@media(max-width:960px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .side{position:static;order:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-in{grid-template-columns:minmax(0,1fr);padding-top:var(--sp-6)}
+  .hero-art{order:-1;max-width:240px;margin:0 auto}
+  .foot-in{grid-template-columns:1fr 1fr}
+  .grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:720px){
+  :root{--fs-3xl:32px;--fs-2xl:26px}
+  .head-in{gap:var(--sp-2)}
+  .nav{
+    display:none;position:absolute;left:0;right:0;top:var(--head-h);
+    background:var(--c-surface);border-bottom:1px solid var(--c-line);
+    flex-direction:column;padding:var(--sp-2) var(--sp-4) var(--sp-3);
+    box-shadow:var(--sh-m);
+  }
+  .head{position:sticky}
+  .nav.open{display:flex}
+  .menu-btn{display:block}
+  .search input{width:100px}
+  .side{grid-template-columns:minmax(0,1fr)}
+  .grid-3,.grid-2,.cmt-list{grid-template-columns:minmax(0,1fr)}
+  .pick{grid-template-columns:minmax(0,1fr)}
+  .pick img{width:100%;height:150px}
+  .article{padding:var(--sp-4)}
+  .cmp{grid-template-columns:minmax(0,1fr)}
+  .foot-in{grid-template-columns:minmax(0,1fr)}
+  .hero-facts{gap:var(--sp-4)}
+  .totop{right:12px;bottom:16px;width:40px;height:40px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="announce" id="announce">
+  <b>更新</b>2026-11-08 新增《脚下踩踏力度分级表》与 3 条场景边界问答
+</div>
+
+<header class="head">
+  <div class="head-in">
+    <a class="brand" href="#top" aria-label="女王羞辱踩踏 首页">
+      <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="6" fill="#2b0d14"/>
+        <path d="M9 21 L16 8 L23 21 Z" fill="#c9a227"/>
+        <circle cx="16" cy="24" r="2.4" fill="#c9a227"/>
+      </svg>
+      <span class="brand-txt">女王羞辱踩踏</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">导航</button>
+    <nav class="nav" id="mainNav" aria-label="主题导航">
+      <a href="#overview">领域概览</a>
+      <a href="#picks">精选内容</a>
+      <a href="#latest">最新更新</a>
+      <a href="#cats">分类入口</a>
+      <a href="#deep">深度解析</a>
+      <a href="#guide">体验指南</a>
+      <a href="#faq">常见问答</a>
+      <a href="#comments">用户评论</a>
+      <a href="#news">相关资讯</a>
+      <a href="#rank">角色榜</a>
+      <a href="#tags">相关推荐</a>
+    </nav>
+    <form class="search" id="searchForm" role="search" aria-label="站内查找">
+      <input type="search" id="searchInput" placeholder="查找场景/条目" aria-label="输入关键词">
+      <button type="submit">查找</button>
+    </form>
+  </div>
+</header>
+<p class="search-msg" id="searchMsg" role="status" aria-live="polite"></p>
+
+<main id="top">
+
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="hero-in">
+    <div>
+      <span class="hero-tag">支配系 · 角色扮演 · 安全实践</span>
+      <h1 id="heroTitle">女王羞辱踩踏</h1>
+      <p class="hero-desc">一份写角色剧本、也写边界的实践图谱。从语言羞耻的分级用语，到脚下踩踏的力度与受力点，把“羞辱”拆成可谈判、可暂停、可复盘的场景动作，而不是一句模糊的狠话。</p>
+      <div class="hero-cta">
+        <a class="btn btn-main" href="#guide">看体验指南</a>
+        <a class="btn btn-ghost" href="#deep">读深度解析</a>
+      </div>
+      <div class="hero-facts">
+        <div><strong>12</strong><span>场景条目类型</span></div>
+        <div><strong>6</strong><span>力度档位</span></div>
+        <div><strong>3</strong><span>谈判阶段</span></div>
+        <div><strong>40</strong><span>条边界问答</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#c9a227" stop-opacity=".9"/>
+            <stop offset="1" stop-color="#8a5a12" stop-opacity=".4"/>
+          </linearGradient>
+        </defs>
+        <circle cx="150" cy="140" r="112" fill="none" stroke="url(#hg)" stroke-width="1.2" stroke-dasharray="3 6"/>
+        <circle cx="150" cy="140" r="84" fill="none" stroke="#c9a227" stroke-opacity=".35" stroke-width="1"/>
+        <path d="M150 58 a82 82 0 0 1 0 164" fill="none" stroke="#c9a227" stroke-opacity=".55" stroke-width="2"/>
+        <path d="M150 58 a82 82 0 0 0 0 164" fill="none" stroke="#e0c37a" stroke-opacity=".3" stroke-width="2"/>
+        <path d="M150 96 L186 160 L114 160 Z" fill="none" stroke="#c9a227" stroke-width="2.4" stroke-linejoin="round"/>
+        <circle cx="150" cy="178" r="7" fill="#c9a227"/>
+        <path d="M118 214 h64 M126 230 h48 M136 246 h28" stroke="#c9a227" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+        <path d="M150 262 v34" stroke="#c9a227" stroke-opacity=".4" stroke-width="1.5"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="layout">
+    <div class="main-col">
+
+      <!-- 领域概览 -->
+      <section class="sec" id="overview" aria-labelledby="ovTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">OVERVIEW</span>
+          <h2 id="ovTitle">领域概览：先分清四种“羞辱”</h2>
+          <p class="sec-sub">同一个词在圈内指四类不同的东西，混淆是绝大多数翻车的起点。下面按触发点和载体分栏，数字为本站在 2026 年 10 月整理的条目统计。</p>
+        </div>
+        <div class="grid-2">
+          <div class="card ov-card">
+            <span class="num">01</span>
+            <h3>语言羞辱</h3>
+            <p>用称呼、贬低性台词、命令句式制造羞耻。分“戏内称呼”和“戏外称呼”两层，前者如“蠢货”“废物”，后者一旦出现就默认越界。台词库现有 86 条，最长单场景 12 分钟。</p>
+          </div>
+          <div class="card ov-card">
+            <span class="num">02</span>
+            <h3>姿态羞辱</h3>
+            <p>跪姿、爬行、仰视、学动物姿势。核心变量是持续时间与关节受压，膝下垫厚度建议不小于 15mm 的软垫，单次跪姿超过 8 分钟需换姿势。</p>
+          </div>
+          <div class="card ov-card">
+            <span class="num">03</span>
+            <h3>踩踏接触</h3>
+            <p>足部与身体的接触，含踩、踏、碾、负重靠。真正可长期实践的集中在脚掌、小腿、背部和胸前非肋骨区，头部与颈部不在常规范围。</p>
+          </div>
+          <div class="card ov-card">
+            <span class="num">04</span>
+            <h3>身份贬抑</h3>
+            <p>用“仆人”“工具”“家具”等身份框架替代人格对话。这类最容易滑向真实贬低，需在开场前写在纸上，而不是靠临场发挥。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 精选内容 -->
+      <section class="sec" id="picks" aria-labelledby="pkTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">PICKS</span>
+          <h2 id="pkTitle">精选内容推荐</h2>
+          <p class="sec-sub">四份可以直接照着走的材料，附实操参数，不含空泛口号。</p>
+        </div>
+        <div class="grid-2">
+          <article class="card pick">
+            <div>
+              <span class="pick-tag">场景设计</span>
+              <h3>脚下踩踏六档力度对照表</h3>
+              <p>从“足底贴背不施力”到“单脚承重 40kg”，逐档标注鞋底材质、接触面积和适用部位。</p>
+              <div class="meta">2026-10-28 · 更新至第 3 版</div>
+            </div>
+            <img src="https://picsum.photos/seed/stepscale6/264/192" width="264" height="192" loading="lazy" alt="六档力度对照表打印稿放在木桌上">
+          </article>
+          <article class="card pick">
+            <div>
+              <span class="pick-tag">台词</span>
+              <h3>羞辱台词的三段式结构</h3>
+              <p>称呼、指控、指令三段拼装，给 24 组可替换词块，避免全程只有一句脏话。</p>
+              <div class="meta">2026-11-02 · 收录 86 条</div>
+            </div>
+            <img src="https://picsum.photos/seed/lines86/264/192" width="264" height="192" loading="lazy" alt="打开的笔记本上写满台词分段标记">
+          </article>
+          <article class="card pick">
+            <div>
+              <span class="pick-tag">安全</span>
+              <h3>膝下软垫厚度与跪姿时长</h3>
+              <p>15mm、25mm、40mm 三种垫子在不同体重下的实测压迫感，附换姿势时间点。</p>
+              <div class="meta">2026-10-25 · 12 人样本</div>
+            </div>
+            <img src="https://picsum.photos/seed/kneepad40/264/192" width="264" height="192" loading="lazy" alt="三种不同厚度的灰色软垫并排摆放">
+          </article>
+          <article class="card pick">
+            <div>
+              <span class="pick-tag">复盘</span>
+              <h3>场景结束后的十分钟对谈模板</h3>
+              <p>六个问题按顺序问，从身体感受排到情绪残留，最后一条是“下次删掉哪一句”。</p>
+              <div class="meta">2026-11-05 · 可直接打印</div>
+            </div>
+            <img src="https://picsum.photos/seed/aftertalk10/264/192" width="264" height="192" loading="lazy" alt="摊开的复盘问卷与一支铅笔">
+          </article>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="sec" id="latest" aria-labelledby="ltTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">UPDATES</span>
+          <h2 id="ltTitle">最新更新</h2>
+          <p class="sec-sub">按时间倒序，只记有实际改动的条目。</p>
+        </div>
+        <ul class="timeline">
+          <li>
+            <time datetime="2026-11-08">今天 · 11-08</time>
+            <h3>新增《脚下踩踏力度分级表》</h3>
+            <p>把原来的三档拆成六档，补充帆布、皮底、硬底三种鞋底在同档位下的压力差异。</p>
+          </li>
+          <li>
+            <time datetime="2026-11-06">11-06</time>
+            <h3>“蠢货”一词的使用边界重写</h3>
+            <p>原条目把该词直接列为安全用词，修订后要求先确认对方是否接受带智力贬低的称呼。</p>
+          </li>
+          <li>
+            <time datetime="2026-11-03">11-03</time>
+            <h3>补 3 条场景边界问答</h3>
+            <p>涉及“能否踩脸”“踩踏时长上限”“酒后能否进行”，均给出不做的理由。</p>
+          </li>
+          <li>
+            <time datetime="2026-10-30">10-30</time>
+            <h3>跪姿计时器小程序上线</h3>
+            <p>每 8 分钟提醒换姿势，记录单场景累计时长，数据只存本地。</p>
+          </li>
+          <li>
+            <time datetime="2026-10-22">10-22</time>
+            <h3>台词库第 4 批录入 18 条</h3>
+            <p>全部标注来源场景与适用档位，删除 5 条被反馈“出戏”的条目。</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 分类入口 -->
+      <section class="sec" id="cats" aria-labelledby="ctTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">CATEGORIES</span>
+          <h2 id="ctTitle">分类入口：按玩法找条目</h2>
+          <p class="sec-sub">十二个频道，数字为当前条目数。</p>
+        </div>
+        <div class="chips">
+          <a href="#picks">语言羞辱台词<span class="n">86</span></a>
+          <a href="#deep">脚下踩踏力度<span class="n">42</span></a>
+          <a href="#guide">跪姿与爬行<span class="n">37</span></a>
+          <a href="#picks">身份贬抑剧本<span class="n">29</span></a>
+          <a href="#guide">踩脸边界讨论<span class="n">14</span></a>
+          <a href="#faq">安全词与暂停<span class="n">33</span></a>
+          <a href="#comments">实操复盘记录<span class="n">51</span></a>
+          <a href="#rank">女王角色设定<span class="n">26</span></a>
+          <a href="#news">鞋底与地面材质<span class="n">19</span></a>
+          <a href="#guide">场景时长管理<span class="n">22</span></a>
+          <a href="#faq">新手常见误区<span class="n">40</span></a>
+          <a href="#tags">事后安抚流程<span class="n">18</span></a>
+        </div>
+      </section>
+
+      <!-- 深度解析 -->
+      <section class="sec" id="deep" aria-labelledby="dpTitle">
+        <div class="article">
+          <span class="sec-kicker">DEEP DIVE</span>
+          <h2 id="dpTitle">深度解析：羞辱强度不靠台词狠，靠可预测性</h2>
+          <p class="lead">判断一场羞辱场景好不好，看的不是对方喊得多难听，而是被支配方能不能预测下一秒会发生什么。可预测，羞耻才有空间生长；不可预测，先来的是紧张和防御。</p>
+
+          <h3>一、“越狠越有效”在 9 月的一次对照里被推翻</h3>
+          <p>2026 年 9 月 27 日，一个 14 人参与的小型对照做了两轮：第一轮台词随机、动作即兴，第二轮台词顺序固定、每步提前告知。两轮时长都是 15 分钟、档位相同。结束后用 1—10 分自评“羞耻感”和“安全感”。结果是随机组的羞耻感均值 6.1、安全感 4.3；固定顺序组羞耻感 7.4、安全感 7.9。也就是说，提前知道流程，反而更容易进入状态。样本小，不足以当定论，但方向清楚。</p>
+          <div class="quotebox">被反复念到的那句“跪下”，在顺序固定的版本里是第 4 步；在随机版本里可能出现在第 1 步，也可能干脆没有。前者像仪式，后者像突袭。</div>
+
+          <h3>二、力度表：六档里真正常用的是第 2 到第 4 档</h3>
+          <p>下面这张表是 11 月 8 日修订版的核心部分。第 5、6 档不是常规玩法，标注出来是为了让人看清差距，而不是鼓励往上冲。</p>
+          <table class="data">
+            <thead><tr><th>档位</th><th>施力方式</th><th>接触部位</th><th>单次建议时长</th></tr></thead>
+            <tbody>
+              <tr><td>1 档</td><td>足底贴背，不施力</td><td>背部</td><td>不限（仅心理）</td></tr>
+              <tr><td>2 档</td><td>半脚掌轻压</td><td>背、小腿</td><td>≤ 60 秒</td></tr>
+              <tr><td>3 档</td><td>全脚掌重量转移</td><td>背部、大腿外侧</td><td>≤ 30 秒</td></tr>
+              <tr><td>4 档</td><td>单脚承重约 20kg</td><td>背部、胸前非肋骨</td><td>≤ 15 秒</td></tr>
+              <tr><td>5 档</td><td>单脚承重约 30—40kg</td><td>仅背部厚肉区</td><td>≤ 8 秒，需专人看护</td></tr>
+              <tr><td>6 档</td><td>跳跃式落足</td><td>不推荐，仅示意</td><td>不做</td></tr>
+            </tbody>
+          </table>
+          <p>表格最容易误读的地方是“承重”。穿硬底鞋时，20kg 的承重集中在前脚掌，压强远高于同重量的赤足。10 月 30 日的反馈里，有两位体验者把 3 档形容成“比想象中重”，原因是鞋底太硬。</p>
+
+          <h3>三、有一处说法分歧，我把三种版本都放着</h3>
+          <p>关于“踩脸”，圈内说法至少三版：<b>事实层面</b>，脚掌覆盖口鼻存在窒息风险，这是可核对的医学常识；<b>转述层面</b>，有人说“轻碰脸颊不算”，但“轻”没有统一定义；<b>推测层面</b>，有人认为只要秒数够短就没问题，这属于个人判断，没有数据支持。我的处理是把“脸部与颈部”整体列为不做区，理由是可操作的定义成本太高，收益不值得。</p>
+
+          <h3>四、把“判断”拆成能核对的三件事</h3>
+          <p>遇到“这场羞辱是不是过头了”的争论，可以拆成三件可核对的事：一是场景前有没有书面列出可用词与禁用词；二是时长有没有计时，能不能说出具体分钟数；三是结束后有没有复盘对谈，谁先说感受。三条都缺，判断就只能靠感觉，而感觉在争议里最难对齐。</p>
+          <div class="cmp">
+            <div class="h">可核对项</div><div class="h">不可核对项</div>
+            <div class="c">禁用词清单是否在事前确认</div><div class="c">“当时气氛其实还好”</div>
+            <div class="c">单次踩踏的实际秒数</div><div class="c">“看着不重”</div>
+            <div class="c">复盘是谁先开口</div><div class="c">“彼此都懂”</div>
+          </div>
+          <p>顺序固定带来的收益，在 9 月那组对照里达到 1.3 分的羞耻感提升。这不是说所有场景都要写成剧本，而是说至少把“第几步做什么”写出来，临场再润色语气。两者不冲突。</p>
+        </div>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="sec" id="guide" aria-labelledby="gdTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">GUIDE</span>
+          <h2 id="gdTitle">体验指南：从谈判到复盘的六步</h2>
+          <p class="sec-sub">适用于首次尝试的人，六步走完再谈台词和道具。</p>
+        </div>
+        <ol class="steps card" style="padding:var(--sp-4) var(--sp-5)">
+          <li>
+            <h3>写禁用词，不写“什么都行”</h3>
+            <p>列出三类：身体部位、家庭称呼、职业侮辱。默认全部禁用，逐条确认再放开。</p>
+          </li>
+          <li>
+            <h3>定档位，不定“程度”</h3>
+            <p>用六档力度表选一个上限，写在纸上。说“中等力度”等于没说，说“最高 3 档”才是参数。</p>
+          </li>
+          <li>
+            <h3>选安全词，加一个中文备用词</h3>
+            <p>常用“红灯”之外再加一个日常词，如“停一下”，防止入戏后舌头打结说不清。</p>
+          </li>
+          <li>
+            <h3>布置场地，先试踩再开始</h3>
+            <p>软垫、防滑地面、手机静音。正式场景前用 1 档试一遍，确认受力点和呼吸都正常。</p>
+          </li>
+          <li>
+            <h3>计时，每 8 分钟检查一次</h3>
+            <p>跪姿与踩踏都计时。8 分钟是换姿势的参考点，不是硬上限，视体重与垫子调整。</p>
+          </li>
+          <li>
+            <h3>复盘十分钟，先问身体再问情绪</h3>
+            <p>顺序是身体感受、情绪残留、下次删哪句。谁先说，事前定好，避免互相客气。</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- FAQ -->
+      <section class="sec" id="faq" aria-labelledby="fqTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">FAQ</span>
+          <h2 id="fqTitle">常见问答</h2>
+          <p class="sec-sub">答案以玩法对象为主语，不做立场表态。</p>
+        </div>
+
+        <details class="faq" open>
+          <summary>踩踏时穿什么鞋底最稳妥？</summary>
+          <div class="ans">赤足或薄底布鞋在前三档最稳妥，受力分散、反馈清楚。皮底与硬底在 3 档以上会显著增加局部压强，10 月 30 日的反馈里两位体验者都提到硬底“重得比数字快”。初次建议赤足。</div>
+        </details>
+        <details class="faq">
+          <summary>语言羞辱台词可以临场发挥吗？</summary>
+          <div class="ans">可以让语气临场变化，但词块最好提前定。临场最容易冒出的往往是对方最忌讳的那类词，比如家人、外貌、职业。86 条台词库里的条目都标注了适用档位，就是为减少这种意外。</div>
+        </details>
+        <details class="faq">
+          <summary>跪姿多久需要换一次？</summary>
+          <div class="ans">15mm 软垫下，体重 60kg 左右的人约 8 分钟开始出现明显压迫感；25mm 垫子可到 12 分钟。计时器小程序设的就是 8 分钟提醒，收到后换爬行或站立姿势，再继续。</div>
+        </details>
+        <details class="faq">
+          <summary>身份贬抑和人身攻击怎么区分？</summary>
+          <div class="ans">身份贬抑有明确的戏内框架，比如“你现在是工具”，离开框架就恢复对话；人身攻击没有框架，攻击的是真实的人。区分办法很简单：这句话在场景结束后还能不能笑着说出来。</div>
+        </details>
+        <details class="faq">
+          <summary>酒后能不能进行踩踏场景？</summary>
+          <div class="ans">不做。酒精影响痛觉判断和平衡，承重时跌倒风险上升，且双方很难准确表达暂停。11 月 3 日补的边界问答里把这条列在“一律不做”一栏。</div>
+        </details>
+        <details class="faq">
+          <summary>对方中途沉默，是不是默认继续？</summary>
+          <div class="ans">沉默不是同意。入戏后说不出话很常见，所以安全词要加中文日常词。更稳的做法是设一个手势，比如捏两下手指，作为说不出口时的替代信号。</div>
+        </details>
+      </section>
+
+      <!-- 用户评论 -->
+      <section class="sec" id="comments" aria-labelledby="cmTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">COMMENTS</span>
+          <h2 id="cmTitle">用户评论</h2>
+          <p class="sec-sub">含中性评价与吐槽，未做统一口径。</p>
+        </div>
+        <div class="cmt-list">
+          <article class="card cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#6e1230">林</span>
+              <div class="cmt-name">林间旧事<small>2026-11-06</small></div>
+            </div>
+            <p>六档表里 3 档的描述很准，“重量转移”比“轻压”贴切。之前一直按“中等”理解，实际偏重了。</p>
+            <span class="ref">评《脚下踩踏六档力度对照表》</span>
+          </article>
+          <article class="card cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#8a5a12">周</span>
+              <div class="cmt-name">周三的猫<small>2026-11-05</small></div>
+            </div>
+            <p>台词库删掉那 5 条挺对，有几条读出来就出戏，像在背课文。</p>
+            <span class="ref">评台词库第 4 批</span>
+          </article>
+          <article class="card cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#3c0a1a">陈</span>
+              <div class="cmt-name">陈默<small>2026-11-03</small></div>
+            </div>
+            <p>对“蠢货”那条修订持保留意见。戏内称呼本来就不是真实评价，改得太保守反而削弱场景感。不过要求事前确认这点我同意。</p>
+            <span class="ref">评“蠢货”边界重写</span>
+          </article>
+          <article class="card cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#9c6b1e">苏</span>
+              <div class="cmt-name">苏叶<small>2026-11-02</small></div>
+            </div>
+            <p>跪姿计时器好用，就是提醒音有点尖锐，入戏时被吓一跳。希望换成低音。</p>
+            <span class="ref">评跪姿计时器</span>
+          </article>
+          <article class="card cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#6e1230">顾</span>
+              <div class="cmt-name">顾北<small>2026-10-30</small></div>
+            </div>
+            <p>10 分钟复盘模板的第三个问题“下次删掉哪一句”很实用，比笼统问感受好开口。</p>
+            <span class="ref">评复盘对谈模板</span>
+          </article>
+          <article class="card cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#5a4a4e">魏</span>
+              <div class="cmt-name">魏某人<small>2026-10-28</small></div>
+            </div>
+            <p>鞋底材质那段写得不够细，帆布和皮底的差别只在备注里提了一句，想看的对比表没有。</p>
+            <span class="ref">评力度对照表第 3 版</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="sec" id="news" aria-labelledby="nwTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">NEWS</span>
+          <h2 id="nwTitle">相关资讯</h2>
+          <p class="sec-sub">来自不同平台与账号的公开讨论，摘要不复述标题。</p>
+        </div>
+        <ul class="news">
+          <li>
+            <time datetime="2026-11-07">11-07</time>
+            <div>
+              <h3>某角色扮演社区发布 2026 年第三季度安全事件统计</h3>
+              <p>报告覆盖 1,240 份匿名问卷，其中因“未提前确认禁用词”产生不适的占 31%，比上一季度低 6 个百分点；膝部淤青类身体反馈占 12%。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-04">11-04</time>
+            <div>
+              <h3>“女王剧本写作”线上工作坊开放报名</h3>
+              <p>四节课，分别讲台词分层、顺序编排、复盘提问与场景终止。10 月场次有 68 人参加，回收问卷里“顺序编排”一节评分最高。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-10-29">10-29</time>
+            <div>
+              <h3>软垫厂商公布 25mm 与 40mm 两款在跪姿场景的回弹数据</h3>
+              <p>40mm 款在 60kg 持续压力下的形变量为 8mm，25mm 款为 3mm。厂商未提供医学建议，数据仅供参考。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-10-24">10-24</time>
+            <div>
+              <h3>一档播客用 40 分钟讨论“可预测性”对羞耻感的影响</h3>
+              <p>嘉宾引用 9 月那组 14 人对照，认为顺序固定降低了临场焦虑，但也有听众在评论区质疑样本量过小。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 榜单 -->
+      <section class="sec" id="rank" aria-labelledby="rkTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">RANKING</span>
+          <h2 id="rkTitle">十月角色设定榜</h2>
+          <p class="sec-sub">按条目浏览与收藏量排序，榜单只反映关注度，不代表推荐程度。</p>
+        </div>
+        <ol class="rank card" style="padding:var(--sp-2) var(--sp-5)">
+          <li><b>冷面裁决者</b><span>台词短、指令密集，适合 2—3 档</span></li>
+          <li><b>慵懒的女主人</b><span>语速慢、以姿态羞辱为主，跪姿条目最多</span></li>
+          <li><b>审讯室设定</b><span>强顺序、强计时，复盘提问使用率最高</span></li>
+          <li><b>家具化身份</b><span>身份贬抑类，边界要求写得最细</span></li>
+          <li><b>沉默的观察者</b><span>几乎不说话，靠动作与停顿推进</span></li>
+        </ol>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="sec" id="tags" aria-labelledby="tgTitle">
+        <div class="sec-head">
+          <span class="sec-kicker">TAGS</span>
+          <h2 id="tgTitle">相关推荐</h2>
+          <p class="sec-sub">按长尾词聚合，点开即跳转到对应板块。</p>
+        </div>
+        <div class="tagcloud">
+          <a href="#deep">脚下踩踏力度分级</a>
+          <a href="#guide">羞辱台词三段式</a>
+          <a href="#faq">踩脸为什么不做</a>
+          <a href="#guide">跪姿软垫厚度选择</a>
+          <a href="#comments">场景结束复盘提问</a>
+          <a href="#picks">女王身份剧本模板</a>
+          <a href="#faq">安全词中文备用词</a>
+          <a href="#news">鞋底材质压强对比</a>
+          <a href="#latest">禁用词清单写法</a>
+          <a href="#rank">角色设定榜 十月</a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side" aria-label="侧栏导航与快讯">
+      <div class="side-card">
+        <h3>板块导航</h3>
+        <nav class="side-nav" id="sideNav" aria-label="页内导航">
+          <a href="#overview">领域概览</a>
+          <a href="#picks">精选内容推荐</a>
+          <a href="#latest">最新更新</a>
+          <a href="#cats">分类入口</a>
+          <a href="#deep">深度解析</a>
+          <a href="#guide">体验指南</a>
+          <a href="#faq">常见问答</a>
+          <a href="#comments">用户评论</a>
+          <a href="#news">相关资讯</a>
+          <a href="#rank">角色设定榜</a>
+          <a href="#tags">相关推荐</a>
+        </nav>
+      </div>
+      <div class="side-card">
+        <h3>本周数字</h3>
+        <ul style="list-style:none;padding:0;margin:0;font-size:var(--fs-s);color:var(--c-ink-2)">
+          <li>新增台词条目 18 条</li>
+          <li>力度表修订 2 次</li>
+          <li>边界问答补充 3 条</li>
+          <li>复盘模板下载 214 次</li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>先读这两条</h3>
+        <p style="font-size:var(--fs-s);margin:0 0 var(--sp-2)">不确定从哪开始，先看<a href="#guide">六步体验指南</a>，再回到<a href="#deep">力度表</a>选一个上限。</p>
+      </div>
+    </aside>
+  </div>
+</div>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <div>
+      <div class="brand" style="margin-bottom:var(--sp-3)">
+        <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="6" fill="#c9a227"/>
+          <path d="M9 21 L16 8 L23 21 Z" fill="#3c0a1a"/>
+          <circle cx="16" cy="24" r="2.4" fill="#3c0a1a"/>
+        </svg>
+        <span class="brand-txt">女王羞辱踩踏</span>
+      </div>
+      <p style="color:#d8c2bd;margin:0">把支配系场景写成可谈判的剧本，台词归台词，边界归边界，每一次踩踏都有秒数可数。</p>
+    </div>
+    <div>
+      <h3>玩法</h3>
+      <ul>
+        <li><a href="#overview">领域概览</a></li>
+        <li><a href="#deep">力度分级</a></li>
+        <li><a href="#guide">跪姿与爬行</a></li>
+        <li><a href="#picks">台词结构</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>安全</h3>
+      <ul>
+        <li><a href="#faq">安全词设置</a></li>
+        <li><a href="#faq">禁用词清单</a></li>
+        <li><a href="#guide">时长管理</a></li>
+        <li><a href="#comments">复盘记录</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>参与</h3>
+      <ul>
+        <li><a href="#comments">用户评论</a></li>
+        <li><a href="#rank">角色设定榜</a></li>
+        <li><a href="#tags">相关推荐</a></li>
+        <li><a href="#news">相关资讯</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>页面更新时间 2026-11-08，对应本次新增的力度分级表与 3 条边界问答。</span>
+    <span>站内条目、评论、数字均为示例数据，人物与账号为化名。</span>
+    <span>© 2026 女王羞辱踩踏 · 内容仅供成年人在知情同意前提下参考</span>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('mainNav');
+  var head=document.querySelector('.head');
+  menuBtn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded',open?'true':'false');
+  });
+  document.querySelectorAll('#mainNav a').forEach(function(a){
+    a.addEventListener('click',function(){
+      if(window.matchMedia('(max-width:720px)').matches){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  });
+  document.addEventListener('click',function(e){
+    if(window.matchMedia('(max-width:720px)').matches && nav.classList.contains('open')){
+      if(!nav.contains(e.target) && e.target!==menuBtn){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    }
+  });
+
+  // 平滑滚动偏移
+  var offset=function(){return document.getElementById('announce').offsetHeight + head.offsetHeight + 12;};
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var id=a.getAttribute('href');
+      if(id.length<2) return;
+      var t=document.getElementById(id.slice(1));
+      if(!t) return;
+      e.preventDefault();
+      var y=t.getBoundingClientRect().top+window.pageYOffset-offset();
+      window.scrollTo({top:y,behavior:'smooth'});
+      history.replaceState(null,'',id);
+    });
+  });
+
+  // 回到顶部
+  var toTop=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){
+    if(window.pageYOffset>480){toTop.classList.add('show');}
+    else{toTop.classList.remove('show');}
+  },{passive:true});
+  toTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+
+  // 侧栏滚动高亮
+  var sideLinks=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var targets=sideLinks.map(function(a){return document.getElementById(a.getAttribute('href').slice(1));}).filter(Boolean);
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        var id=en.target.id;
+        sideLinks.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+id);});
+        document.querySelectorAll('#mainNav a').forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+id);});
+      }
+    });
+  },{rootMargin:'-'+offset()+'px 0px -55% 0px',threshold:0});
+  targets.forEach(function(t){io.observe(t);});
+
+  // 本地搜索
+  var form=document.getElementById('searchForm');
+  var input=document.getElementById('searchInput');
+  var msg=document.getElementById('searchMsg');
+  var sections=Array.prototype.slice.call(document.querySelectorAll('section[id], .side-card'));
+  sections.forEach(function(s){s.dataset.origText=s.textContent.replace(/\s+/g,' ');});
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var q=input.value.trim();
+    if(!q){msg.textContent='请输入要查找的词，例如“踩踏”“台词”“复盘”。';return;}
+    var hits=[];
+    sections.forEach(function(s){
+      if(s.dataset.origText && s.dataset.origText.indexOf(q)>-1){
+        var h=s.querySelector('h1,h2,h3');
+        hits.push(h?h.textContent.trim():'相关板块');
+      }
+    });
+    if(hits.length){
+      msg.textContent='找到 '+hits.length+' 处：'+hits.slice(0,4).join(' / ')+(hits.length>4?' 等':'');
+    }else{
+      msg.textContent='没有找到“'+q+'”。试试“踩踏”“羞辱台词”“跪姿”“复盘”或“安全词”。';
+    }
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"女王羞辱踩踏",
+  "description":"支配系角色扮演中的羞辱与踩踏玩法指南，含力度分级、台词结构与安全约定。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"踩踏时穿什么鞋底最稳妥？","acceptedAnswer":{"@type":"Answer","text":"赤足或薄底布鞋在前三档最稳妥，受力分散、反馈清楚。皮底与硬底在3档以上会显著增加局部压强，初次建议赤足。"}},
+    {"@type":"Question","name":"语言羞辱台词可以临场发挥吗？","acceptedAnswer":{"@type":"Answer","text":"可以让语气临场变化，但词块最好提前定。临场最容易冒出的往往是对方最忌讳的那类词，比如家人、外貌、职业。"}},
+    {"@type":"Question","name":"跪姿多久需要换一次？","acceptedAnswer":{"@type":"Answer","text":"15mm软垫下，体重60kg左右的人约8分钟开始出现明显压迫感；25mm垫子可到12分钟。计时器设的是8分钟提醒。"}},
+    {"@type":"Question","name":"身份贬抑和人身攻击怎么区分？","acceptedAnswer":{"@type":"Answer","text":"身份贬抑有明确的戏内框架，离开框架就恢复对话；人身攻击没有框架，攻击的是真实的人。"}},
+    {"@type":"Question","name":"酒后能不能进行踩踏场景？","acceptedAnswer":{"@type":"Answer","text":"不做。酒精影响痛觉判断和平衡，承重时跌倒风险上升，且双方很难准确表达暂停。"}},
+    {"@type":"Question","name":"对方中途沉默，是不是默认继续？","acceptedAnswer":{"@type":"Answer","text":"沉默不是同意。入戏后说不出话很常见，所以安全词要加中文日常词，更稳的做法是设一个手势作为替代信号。"}}
+  ]
+}
+</script>
+</body>
+              </html>
